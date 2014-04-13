@@ -1,0 +1,12 @@
+# view res/layout/activity_main.xml #generated:2
+-keep class android.support.v4.widget.DrawerLayout { <init>(...); }
+
+# view AndroidManifest.xml #generated:20
+-keep class com.plan2gather.LoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:16
+-keep class com.plan2gather.MainActivity { <init>(...); }
+
+# view res/layout/activity_main.xml #generated:33
+-keep class com.plan2gather.fragments.NavigationDrawerFragment { <init>(...); }
+

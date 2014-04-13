@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="menu_item_title">#fff</color>
+    <color name="menu_background">#A0303030</color>
+    <color name="menu_background_pressed">#A0808080</color>
+    <color name="menu_divider">#D9272727</color>
+    <color name="counter_text_bg">#D9626262</color>
+    <color name="counter_text_color">#c5c4c4</color>
+    <color name="actionbar_bg">#AB91C7FF</color>
+    <color name="canlendar_background">#30DEDEDE</color>
+    <color name="canlendar_cell_background">#FFDEDEDE</color>
+    <color name="canlendar_cell_background_selected">#99B2CCCC</color>
+    <color name="this_month_textColor">#042CC9</color>
+    <color name="other_month_textColor">#FFFFFF</color>
+
+</resources>
