@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Plan2gather</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_function">Function</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Content Description -->
+    <string name="desc_menu_items_icon">Menu icon</string>
+
+    <!-- Sliding menu items -->
+    <string-array name="slide_menu_items">
+        <item>Calender</item>
+        <item>Socle</item>
+        <item>Profile</item>
+        <item>Setting</item>
+    </string-array>
+
+    <!-- Sliding menu item icons -->
+    <!-- Keep in order with title items -->
+    <array name="slide_menu_icons">
+        <item>@drawable/ic_calender</item>
+        <item>@drawable/ic_socle</item>
+        <item>@drawable/ic_profile</item>
+        <item>@drawable/ic_settings</item>
+    </array>
+
+    <!-- Registration page -->
+    <string name="title_activity_login">Registration</string>
+
+    <!-- Strings related to login -->
+    <string name="ask_for_number">Please enter your phone number</string>
+    <string name="prompt_number">Mobile phone number</string>
+    <string name="register_button">Register</string>
+    <string name="error_invalid_number">This number is invalid</string>
+    <string name="error_field_required">This field is required</string>
+    
+    <!-- Profile page -->
+    <string name="introduce">Profile Pic:</string>
+    <string name="change_propic">Change Profile Pic</string>
+    
+</resources>
