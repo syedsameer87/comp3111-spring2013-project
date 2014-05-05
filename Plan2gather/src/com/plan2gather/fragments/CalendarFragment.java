@@ -39,7 +39,8 @@ public class CalendarFragment extends Fragment {
 	ArrayList<String> event;
 	LinearLayout rLayout;
 	ArrayList<String> date;
-	ArrayList<String> desc;
+	ArrayList<String> eventName;
+	String selectedGridDate; 
 
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -97,7 +98,7 @@ public class CalendarFragment extends Fragment {
 				}
 
 				((CalendarAdapter) parent.getAdapter()).setSelected(v);
-				String selectedGridDate = CalendarAdapter.dayString
+				selectedGridDate = CalendarAdapter.dayString
 						.get(position);
 				String[] separatedTime = selectedGridDate.split("-");
 				String gridvalueString = separatedTime[2].replaceFirst("^0*",
@@ -113,19 +114,19 @@ public class CalendarFragment extends Fragment {
 				}
 				((CalendarAdapter) parent.getAdapter()).setSelected(v);
 
-				desc = new ArrayList<String>();
+				eventName = new ArrayList<String>();
 				for (int i = 0; i < Utility.startDates.size(); i++) {
 					if (Utility.startDates.get(i).equals(selectedGridDate)) {
-						desc.add(Utility.nameOfEvent.get(i));
+						eventName.add(Utility.nameOfEvent.get(i));
 					}
 				}
 
-				if (desc.size() > 0) {
-					for (int i = 0; i < desc.size(); i++) {
+				if (eventName.size() > 0) {
+					for (int i = 0; i < eventName.size(); i++) {
 						TextView rowTextView = new TextView(getActivity());
 
 						// set some properties of rowTextView or something
-						rowTextView.setText("Event:" + desc.get(i));
+						rowTextView.setText("Event:" + eventName.get(i));
 						rowTextView.setTextColor(Color.BLACK);
 
 						// add the textview to the linearlayout
@@ -135,7 +136,7 @@ public class CalendarFragment extends Fragment {
 
 				}
 
-				desc = null;
+				eventName = null;
 				showToast(selectedGridDate);
 			}
 		});
