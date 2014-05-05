@@ -16,7 +16,7 @@ public class LoginActivity extends Activity {
 
 	// Dummy values
 	private static final String[] DUMMY_CREDENTIALS = new String[] {
-			"98765432",  "67699413" };
+			"98765432", "67699413" };
 
 	// Values for email and password at the time of the login attempt.
 	private String mNumber;
