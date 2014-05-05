@@ -57,11 +57,14 @@
         android:numColumns="7"
         android:stretchMode="columnWidth" />
     
-    <TextView
-        android:id="@+id/date_info"
+    <LinearLayout 
+        android:id="@+id/eventDetail"
+        android:layout_below="@+id/gridview"
         android:layout_width="match_parent"
-        android:layout_height="fill_parent"
-        android:textSize="18sp"
-        android:text="Event on selected day here" />
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    </LinearLayout>
 
 </LinearLayout>

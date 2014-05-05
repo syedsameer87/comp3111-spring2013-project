@@ -7,10 +7,13 @@ import java.util.GregorianCalendar;
 
 import com.plan2gather.component.CalendarAdapter;
 import com.plan2gather.R;
+import com.plan2gather.component.Utility;
 
 import android.os.Bundle;
 import android.os.Handler;
 import android.app.Fragment;
+import android.graphics.Color;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,6 +21,7 @@ import android.view.View.OnClickListener;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.GridView;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -32,6 +36,10 @@ public class CalendarFragment extends Fragment {
 	public ArrayList<String> items; // container to store calendar items which
 
 	// needs showing the event marker
+	ArrayList<String> event;
+	LinearLayout rLayout;
+	ArrayList<String> date;
+	ArrayList<String> desc;
 
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -41,6 +49,7 @@ public class CalendarFragment extends Fragment {
 			Bundle savedInstanceState) {
 		View view = inflater.inflate(R.layout.fragment_calendar, null);
 
+		rLayout = (LinearLayout) view.findViewById(R.id.eventDetail);
 		month = (GregorianCalendar) GregorianCalendar.getInstance();
 		itemMonth = (GregorianCalendar) month.clone();
 
@@ -82,6 +91,10 @@ public class CalendarFragment extends Fragment {
 		gridview.setOnItemClickListener(new OnItemClickListener() {
 			public void onItemClick(AdapterView<?> parent, View v,
 					int position, long id) {
+				// removing the previous view if added
+				if (((LinearLayout) rLayout).getChildCount() > 0) {
+					((LinearLayout) rLayout).removeAllViews();
+				}
 
 				((CalendarAdapter) parent.getAdapter()).setSelected(v);
 				String selectedGridDate = CalendarAdapter.dayString
@@ -100,6 +113,29 @@ public class CalendarFragment extends Fragment {
 				}
 				((CalendarAdapter) parent.getAdapter()).setSelected(v);
 
+				desc = new ArrayList<String>();
+				for (int i = 0; i < Utility.startDates.size(); i++) {
+					if (Utility.startDates.get(i).equals(selectedGridDate)) {
+						desc.add(Utility.nameOfEvent.get(i));
+					}
+				}
+
+				if (desc.size() > 0) {
+					for (int i = 0; i < desc.size(); i++) {
+						TextView rowTextView = new TextView(getActivity());
+
+						// set some properties of rowTextView or something
+						rowTextView.setText("Event:" + desc.get(i));
+						rowTextView.setTextColor(Color.BLACK);
+
+						// add the textview to the linearlayout
+						rLayout.addView(rowTextView);
+
+					}
+
+				}
+
+				desc = null;
 				showToast(selectedGridDate);
 			}
 		});
@@ -152,12 +188,14 @@ public class CalendarFragment extends Fragment {
 			// Print dates of the current week
 			DateFormat df = new SimpleDateFormat("yyyy-MM-dd");
 			String itemvalue;
-			for (int i = 0; i < 7; i++) {
+			event = Utility.readCalendarEvent(getActivity());
+			Log.d("=====Event====", event.toString());
+			Log.d("=====Date ARRAY====", Utility.startDates.toString());
+
+			for (int i = 0; i < Utility.startDates.size(); i++) {
 				itemvalue = df.format(itemMonth.getTime());
 				itemMonth.add(GregorianCalendar.DATE, 1);
-				items.add("2014-04-08");
-				items.add("2014-04-16");
-				items.add("2014-04-28");
+				items.add(Utility.startDates.get(i).toString());
 			}
 
 			adapter.setItems(items);
