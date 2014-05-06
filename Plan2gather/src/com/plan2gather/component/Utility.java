@@ -10,13 +10,13 @@ import android.net.Uri;
 import android.util.Log;
 
 public class Utility {
-	public static ArrayList<String> eventID = new ArrayList<String>();
 	public static ArrayList<String> nameOfEvent = new ArrayList<String>();
 	public static ArrayList<String> descriptions = new ArrayList<String>();
 	public static ArrayList<String> startDates = new ArrayList<String>();
 	public static ArrayList<String> endDates = new ArrayList<String>();
 	public static ArrayList<String> repetition = new ArrayList<String>();
 	public static ArrayList<String> location = new ArrayList<String>();
+	public static ArrayList<EventItem> eventList = new ArrayList<EventItem>();
 
 	public static ArrayList<String> readCalendarEvent(Context context) {
 		Cursor cursor = context.getContentResolver().query(
@@ -28,40 +28,48 @@ public class Utility {
 		String CNames[] = new String[cursor.getCount()];
 
 		// fetching calendars id
-		eventID.clear();
 		nameOfEvent.clear();
 		descriptions.clear();
 		startDates.clear();
 		endDates.clear();
 		repetition.clear();
 		location.clear();
+		eventList.clear();
 		
 		for (int i = 0; i < CNames.length; i++) {
-			eventID.add(cursor.getString(0));
 			nameOfEvent.add(cursor.getString(1));
 			descriptions.add(cursor.getString(2));
 			try {
-				startDates.add(getDate(Long.parseLong(cursor.getString(3))));
+				startDates.add(cursor.getString(3));
 				if (null == cursor.getString(4))
 					endDates.add("");
 				else
-					endDates.add(getDate(Long.parseLong(cursor.getString(4))));
+					endDates.add(cursor.getString(4));
+				repetition.add(cursor.getString(5));
+				location.add(cursor.getString(6));
 			} catch (Exception ex) {
 				Log.d("Sam", "Start:" + cursor.getString(3));
-
 				Log.d("Sam", "End:" + cursor.getString(4));
+				Log.d("Sam", "repetition:" + cursor.getString(5));
+				Log.d("Sam", "location:" + cursor.getString(6));
 			}
-			repetition.add(cursor.getString(5));
-			location.add(cursor.getString(6));
 			CNames[i] = cursor.getString(1);
 			cursor.moveToNext();
 
 		}
+		cursor.close();
 		return nameOfEvent;
 	}
 
 	public static String getDate(long milliSeconds) {
 		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+		Calendar calendar = Calendar.getInstance();
+		calendar.setTimeInMillis(milliSeconds);
+		return formatter.format(calendar.getTime());
+	}
+	
+	public static String getTime(long milliSeconds) {
+		SimpleDateFormat formatter= new SimpleDateFormat("HH:mm:ss");
 		Calendar calendar = Calendar.getInstance();
 		calendar.setTimeInMillis(milliSeconds);
 		return formatter.format(calendar.getTime());

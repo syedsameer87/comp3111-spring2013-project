@@ -6,13 +6,14 @@ import java.util.ArrayList;
 import java.util.GregorianCalendar;
 
 import com.plan2gather.component.CalendarAdapter;
+import com.plan2gather.component.EventAdapter;
+import com.plan2gather.component.EventItem;
 import com.plan2gather.R;
 import com.plan2gather.component.Utility;
 
 import android.os.Bundle;
 import android.os.Handler;
 import android.app.Fragment;
-import android.graphics.Color;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -22,6 +23,7 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.GridView;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -34,13 +36,11 @@ public class CalendarFragment extends Fragment {
 	public Handler handler;// for grabbing some event values for showing the dot
 	// marker.
 	public ArrayList<String> items; // container to store calendar items which
-
 	// needs showing the event marker
 	ArrayList<String> event;
 	LinearLayout rLayout;
 	ArrayList<String> date;
-	ArrayList<String> eventName;
-	String selectedGridDate; 
+	ArrayList<EventItem> eventList;
 
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -50,19 +50,25 @@ public class CalendarFragment extends Fragment {
 			Bundle savedInstanceState) {
 		View view = inflater.inflate(R.layout.fragment_calendar, null);
 
-		rLayout = (LinearLayout) view.findViewById(R.id.eventDetail);
+		// initialization
+		rLayout = (LinearLayout) view.findViewById(R.id.eventInfo);
 		month = (GregorianCalendar) GregorianCalendar.getInstance();
 		itemMonth = (GregorianCalendar) month.clone();
-
+		eventList = new ArrayList<EventItem>();
+		eventList.clear();
 		items = new ArrayList<String>();
-		adapter = new CalendarAdapter(getActivity(), month);
 
+		adapter = new CalendarAdapter(getActivity(), month);
 		GridView gridview = (GridView) view.findViewById(R.id.gridview);
 		gridview.setAdapter(adapter);
+
+		ListView listView = (ListView) view.findViewById(R.id.eventDetail);
+		listView.setAdapter(new EventAdapter(getActivity(), eventList));
 
 		handler = new Handler();
 		handler.post(calendarUpdater);
 
+		// Calendar title and arrows
 		TextView title = (TextView) view.findViewById(R.id.title);
 		title.setText(android.text.format.DateFormat.format("MMMM yyyy", month));
 
@@ -89,6 +95,7 @@ public class CalendarFragment extends Fragment {
 			}
 		});
 
+		// Calendar body
 		gridview.setOnItemClickListener(new OnItemClickListener() {
 			public void onItemClick(AdapterView<?> parent, View v,
 					int position, long id) {
@@ -98,7 +105,7 @@ public class CalendarFragment extends Fragment {
 				}
 
 				((CalendarAdapter) parent.getAdapter()).setSelected(v);
-				selectedGridDate = CalendarAdapter.dayString
+				String selectedGridDate = CalendarAdapter.dayString
 						.get(position);
 				String[] separatedTime = selectedGridDate.split("-");
 				String gridvalueString = separatedTime[2].replaceFirst("^0*",
@@ -114,32 +121,29 @@ public class CalendarFragment extends Fragment {
 				}
 				((CalendarAdapter) parent.getAdapter()).setSelected(v);
 
-				eventName = new ArrayList<String>();
+				eventList = new ArrayList<EventItem>();
 				for (int i = 0; i < Utility.startDates.size(); i++) {
-					if (Utility.startDates.get(i).equals(selectedGridDate)) {
-						eventName.add(Utility.nameOfEvent.get(i));
+					if (Utility.getDate(
+							Long.parseLong(Utility.startDates.get(i))).equals(
+							selectedGridDate)) {
+						String eName = Utility.nameOfEvent.get(i);
+						String eStartTime = Utility.getTime(Long
+								.parseLong(Utility.startDates.get(i)));
+						String eEndTime = Utility.getTime(Long
+								.parseLong(Utility.endDates.get(i)));
+						eventList
+								.add(new EventItem(eName, eStartTime, eEndTime));
+
+						Log.d("====Sam====", "eName: " + eName);
+						Log.d("====Sam====", "eStartTime: " + eStartTime);
+						Log.d("====Sam====", "eEndTime: " + eEndTime);
 					}
 				}
 
-				if (eventName.size() > 0) {
-					for (int i = 0; i < eventName.size(); i++) {
-						TextView rowTextView = new TextView(getActivity());
-
-						// set some properties of rowTextView or something
-						rowTextView.setText("Event:" + eventName.get(i));
-						rowTextView.setTextColor(Color.BLACK);
-
-						// add the textview to the linearlayout
-						rLayout.addView(rowTextView);
-
-					}
-
-				}
-
-				eventName = null;
-				showToast(selectedGridDate);
+				eventList.clear();
 			}
 		});
+
 		return view;
 	}
 
@@ -196,7 +200,8 @@ public class CalendarFragment extends Fragment {
 			for (int i = 0; i < Utility.startDates.size(); i++) {
 				itemvalue = df.format(itemMonth.getTime());
 				itemMonth.add(GregorianCalendar.DATE, 1);
-				items.add(Utility.startDates.get(i).toString());
+				items.add(Utility.getDate(
+						Long.parseLong(Utility.startDates.get(i))).toString());
 			}
 
 			adapter.setItems(items);
