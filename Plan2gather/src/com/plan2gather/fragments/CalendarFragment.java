@@ -139,7 +139,7 @@ public class CalendarFragment extends Fragment {
 						Log.d("====Sam====", "eEndTime: " + eEndTime);
 					}
 				}
-
+				
 				eventList.clear();
 			}
 		});

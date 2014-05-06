@@ -3,6 +3,7 @@ package com.plan2gather.component;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Locale;
 
 import android.content.Context;
 import android.database.Cursor;
@@ -62,14 +63,14 @@ public class Utility {
 	}
 
 	public static String getDate(long milliSeconds) {
-		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd", Locale.US);
 		Calendar calendar = Calendar.getInstance();
 		calendar.setTimeInMillis(milliSeconds);
 		return formatter.format(calendar.getTime());
 	}
 	
 	public static String getTime(long milliSeconds) {
-		SimpleDateFormat formatter= new SimpleDateFormat("HH:mm:ss");
+		SimpleDateFormat formatter= new SimpleDateFormat("HH:mm:ss", Locale.US);
 		Calendar calendar = Calendar.getInstance();
 		calendar.setTimeInMillis(milliSeconds);
 		return formatter.format(calendar.getTime());
