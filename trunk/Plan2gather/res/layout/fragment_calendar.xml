@@ -21,7 +21,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:background="@drawable/arrow_left" />
+                android:background="@drawable/arrow_left"
+                android:contentDescription="@string/arrow_left" />
         </RelativeLayout>
 
         <TextView
@@ -44,7 +45,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:background="@drawable/arrow_right" />
+                android:background="@drawable/arrow_right" 
+                android:contentDescription="@string/arrow_right"/>
         </RelativeLayout>
     </RelativeLayout>
 
@@ -56,15 +58,13 @@
         android:listSelector="@android:color/transparent"
         android:numColumns="7"
         android:stretchMode="columnWidth" />
-    
-    <LinearLayout 
+
+    <ListView
         android:id="@+id/eventDetail"
-        android:layout_below="@+id/gridview"
         android:layout_width="match_parent"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-    </LinearLayout>
+        android:layout_height="30dp"
+        android:choiceMode="singleChoice"
+        android:divider="@color/menu_divider"
+        android:dividerHeight="2dp" />
 
 </LinearLayout>
