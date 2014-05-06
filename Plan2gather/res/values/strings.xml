@@ -41,4 +41,8 @@
     <string name="introduce">Profile Pic:</string>
     <string name="change_propic">Change Profile Pic</string>
     
+    <!-- Calendar related -->
+    <string name="arrow_left">Arrow left</string>
+    <string name="arrow_right">Arrow right</string>
+    
 </resources>
