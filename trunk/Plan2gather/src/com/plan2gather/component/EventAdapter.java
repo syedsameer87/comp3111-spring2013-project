@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.TextView;
 
 public class EventAdapter extends BaseAdapter {
 	private Context mContext;
@@ -42,7 +43,13 @@ public class EventAdapter extends BaseAdapter {
 			convertView = vi.inflate(R.layout.event_item, null);
 		}
 		
+		TextView txtName = (TextView) convertView.findViewById(R.id.eventName);
+		TextView txtStart = (TextView) convertView.findViewById(R.id.startTime);
+		TextView txtEnd = (TextView) convertView.findViewById(R.id.endTime);
 		
+		txtName.setText(eventList.get(position).getTitle());
+		txtStart.setText(eventList.get(position).getStartTime());
+		txtEnd.setText(eventList.get(position).getEndTime());
 
 		return convertView;
 	}
