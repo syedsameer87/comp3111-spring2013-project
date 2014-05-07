@@ -11,14 +11,17 @@
         android:text="@string/introduce"
         android:textSize="30sp" />
 
-    <ImageView
-        android:id="@+id/targetimage"
-        android:layout_width="300dp"
+    <EditText
+        android:id="@+id/screenName"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center" />
+        android:ems="10">
+
+        <requestFocus />
+    </EditText>
 
     <Button
-        android:id="@+id/loadimage"
+        android:id="@+id/changeSName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

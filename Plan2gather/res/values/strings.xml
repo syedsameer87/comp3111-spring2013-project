@@ -38,8 +38,8 @@
     <string name="error_field_required">This field is required</string>
 
     <!-- Profile page -->
-    <string name="introduce">Profile Pic:</string>
-    <string name="change_propic">Change Profile Pic</string>
+    <string name="introduce">Screen name:</string>
+    <string name="change_propic">Change screen name</string>
 
     <!-- Calendar related -->
     <string name="arrow_left">Arrow left</string>
@@ -58,8 +58,12 @@
     <string name="hello_world">Hello world!</string>
     <string name="createEvent">Create Event</string>
     <string name="editEvent">Edit Event</string>
-    
+
     <!-- Socle -->
-	<string name="picDesc">ProPic</string>
-	
+    <string name="picDesc">ProPic</string>
+    <string name="title_activity_add_socle">AddSocle</string>
+    <string name="addNumber">Target Number:</string>
+    <string name="cImport">From contect..</string>
+    <string name="sCreate">Add socle</string>
+
 </resources>
