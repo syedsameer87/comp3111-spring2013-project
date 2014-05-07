@@ -1,9 +1,12 @@
 package com.plan2gather.component;
 
 import java.util.ArrayList;
+
 import com.plan2gather.R;
+
 import android.app.Activity;
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;

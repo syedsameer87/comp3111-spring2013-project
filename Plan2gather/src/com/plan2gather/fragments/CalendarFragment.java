@@ -22,7 +22,6 @@ import android.view.View.OnClickListener;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.GridView;
-import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -31,16 +30,17 @@ import android.widget.Toast;
 public class CalendarFragment extends Fragment {
 
 	public GregorianCalendar month, itemMonth;// calendar instances.
-
+	public EventAdapter eAdapter;
 	public CalendarAdapter adapter;// adapter instance
 	public Handler handler;// for grabbing some event values for showing the dot
 	// marker.
 	public ArrayList<String> items; // container to store calendar items which
+	String selectedGridDate;
 	// needs showing the event marker
 	ArrayList<String> event;
-	LinearLayout rLayout;
 	ArrayList<String> date;
 	ArrayList<EventItem> eventList;
+	ListView listView;
 
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -51,22 +51,20 @@ public class CalendarFragment extends Fragment {
 		View view = inflater.inflate(R.layout.fragment_calendar, null);
 
 		// initialization
-		rLayout = (LinearLayout) view.findViewById(R.id.eventInfo);
 		month = (GregorianCalendar) GregorianCalendar.getInstance();
 		itemMonth = (GregorianCalendar) month.clone();
-		eventList = new ArrayList<EventItem>();
-		eventList.clear();
 		items = new ArrayList<String>();
-
+		eventList = new ArrayList<EventItem>();
+		
 		adapter = new CalendarAdapter(getActivity(), month);
 		GridView gridview = (GridView) view.findViewById(R.id.gridview);
 		gridview.setAdapter(adapter);
-
-		ListView listView = (ListView) view.findViewById(R.id.eventDetail);
-		listView.setAdapter(new EventAdapter(getActivity(), eventList));
-
+		
 		handler = new Handler();
 		handler.post(calendarUpdater);
+
+		listView = (ListView) view.findViewById(R.id.eventDetail);
+		selectedGridDate = Utility.getDate(System.currentTimeMillis());
 
 		// Calendar title and arrows
 		TextView title = (TextView) view.findViewById(R.id.title);
@@ -99,13 +97,9 @@ public class CalendarFragment extends Fragment {
 		gridview.setOnItemClickListener(new OnItemClickListener() {
 			public void onItemClick(AdapterView<?> parent, View v,
 					int position, long id) {
-				// removing the previous view if added
-				if (((LinearLayout) rLayout).getChildCount() > 0) {
-					((LinearLayout) rLayout).removeAllViews();
-				}
 
 				((CalendarAdapter) parent.getAdapter()).setSelected(v);
-				String selectedGridDate = CalendarAdapter.dayString
+				selectedGridDate = CalendarAdapter.dayString
 						.get(position);
 				String[] separatedTime = selectedGridDate.split("-");
 				String gridvalueString = separatedTime[2].replaceFirst("^0*",
@@ -121,30 +115,41 @@ public class CalendarFragment extends Fragment {
 				}
 				((CalendarAdapter) parent.getAdapter()).setSelected(v);
 
-				eventList = new ArrayList<EventItem>();
-				for (int i = 0; i < Utility.startDates.size(); i++) {
-					if (Utility.getDate(
-							Long.parseLong(Utility.startDates.get(i))).equals(
-							selectedGridDate)) {
-						String eName = Utility.nameOfEvent.get(i);
-						String eStartTime = Utility.getTime(Long
-								.parseLong(Utility.startDates.get(i)));
-						String eEndTime = Utility.getTime(Long
-								.parseLong(Utility.endDates.get(i)));
-						eventList
-								.add(new EventItem(eName, eStartTime, eEndTime));
-
-						Log.d("====Sam====", "eName: " + eName);
-						Log.d("====Sam====", "eStartTime: " + eStartTime);
-						Log.d("====Sam====", "eEndTime: " + eEndTime);
-					}
-				}
-				
-				eventList.clear();
+				updateList(eventList);
 			}
 		});
 
 		return view;
+	}
+
+	protected void updateList(ArrayList<EventItem> eventList) {
+		eventList.clear();
+		for (int i = 0; i < Utility.startDates.size(); i++) {
+			if (Utility.getDate(Long.parseLong(Utility.startDates.get(i)))
+					.equals(selectedGridDate)) {
+				String eName = Utility.nameOfEvent.get(i);
+				String eStartTime = Utility.getTime(Long
+						.parseLong(Utility.startDates.get(i)));
+				String eEndTime = Utility.getTime(Long
+						.parseLong(Utility.endDates.get(i)));
+				eventList.add(new EventItem(eName, eStartTime, eEndTime));
+
+				Log.d("==Sam==", "eName: " + eName);
+				Log.d("==Sam==", "eStartTime: " + eStartTime);
+				Log.d("==Sam==", "eEndTime: " + eEndTime);
+			}
+		}
+		if (eventList.isEmpty())
+			eventList.add(new EventItem("No Event", null, null));
+		/*
+		 * for(int i = 0;i < eventList.size();i++) { EventItem eventItem =
+		 * eventList.get(i); Log.d("====Sam eItem====", "eName: " +
+		 * eventItem.getTitle()); Log.d("====Sam eItem====", "eStartTime: " +
+		 * eventItem.getStartTime()); Log.d("====Sam eItem====", "eEndTime: " +
+		 * eventItem.getEndTime()); }
+		 */
+		eAdapter = new EventAdapter(getActivity(), eventList);
+		listView.setAdapter(eAdapter);
 	}
 
 	protected void setNextMonth() {
@@ -206,6 +211,7 @@ public class CalendarFragment extends Fragment {
 
 			adapter.setItems(items);
 			adapter.notifyDataSetChanged();
+			updateList(eventList);
 		}
 	};
 }

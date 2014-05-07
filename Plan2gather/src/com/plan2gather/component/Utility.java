@@ -70,7 +70,7 @@ public class Utility {
 	}
 	
 	public static String getTime(long milliSeconds) {
-		SimpleDateFormat formatter= new SimpleDateFormat("HH:mm:ss", Locale.US);
+		SimpleDateFormat formatter= new SimpleDateFormat("HH:mm", Locale.US);
 		Calendar calendar = Calendar.getInstance();
 		calendar.setTimeInMillis(milliSeconds);
 		return formatter.format(calendar.getTime());
