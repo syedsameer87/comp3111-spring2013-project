@@ -8,7 +8,6 @@ import java.util.GregorianCalendar;
 import com.plan2gather.component.CalendarAdapter;
 import com.plan2gather.component.EventAdapter;
 import com.plan2gather.component.EventItem;
-import com.plan2gather.EventInfo;
 import com.plan2gather.R;
 import com.plan2gather.component.Utility;
 
@@ -117,19 +116,6 @@ public class CalendarFragment extends Fragment {
 				((CalendarAdapter) parent.getAdapter()).setSelected(v);
 
 				updateList(eventList);
-			}
-		});
-
-		listView.setOnItemClickListener(new OnItemClickListener() {
-			public void onItemClick(AdapterView<?> parent, View v,
-					int position, long id) {
-				EventItem e = eventList.get(position);
-				if (e.getTitle().compareTo("No Event") != 0) {
-					Intent intent = new Intent(getActivity(), EventInfo.class);
-					String eventName = e.getTitle();
-					intent.putExtra("eName", eventName);
-					startActivity(intent);
-				}
 			}
 		});
 
