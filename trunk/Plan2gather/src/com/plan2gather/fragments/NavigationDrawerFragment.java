@@ -103,7 +103,7 @@ public class NavigationDrawerFragment extends Fragment {
 		// check .add to enable counter
 		// Calender
 		slidingMenuItems.add(new NavMenuItems(navMenuTitles[0], navMenuIcons
-				.getResourceId(0, -1), true, "3"));
+				.getResourceId(0, -1)));
 		// Socle
 		slidingMenuItems.add(new NavMenuItems(navMenuTitles[1], navMenuIcons
 				.getResourceId(1, -1)));
@@ -308,8 +308,11 @@ public class NavigationDrawerFragment extends Fragment {
 			return true;
 		}
 		if (item.getItemId() == R.id.action_function) {
-			Toast.makeText(getActivity(), "Function button is not yet implemented", Toast.LENGTH_SHORT)
-					.show();
+			//Calender
+			if(mCurrentSelectedPosition == 0);
+			//Socle
+			else if(mCurrentSelectedPosition == 1);
+
 			return true;
 		}
 

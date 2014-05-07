@@ -36,17 +36,17 @@
     <string name="register_button">Register</string>
     <string name="error_invalid_number">This number is invalid</string>
     <string name="error_field_required">This field is required</string>
-    
+
     <!-- Profile page -->
     <string name="introduce">Profile Pic:</string>
     <string name="change_propic">Change Profile Pic</string>
-    
+
     <!-- Calendar related -->
     <string name="arrow_left">Arrow left</string>
     <string name="arrow_right">Arrow right</string>
     <string name="dash"> - </string>
-    
-    <!-- Event Info page -->
+
+    <!-- Event related -->
     <string name="eName">Event Name:</string>
     <string name="eStart">Start:</string>
     <string name="eEnd">End:</string>
@@ -54,4 +54,12 @@
     <string name="ePlace">Location:</string>
     <string name="eRepeat">Repetition:</string>
     <string name="eParti">Participant:</string>
+    <string name="title_activity_create_event">CreateEvent</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="createEvent">Create Event</string>
+    <string name="editEvent">Edit Event</string>
+    
+    <!-- Socle -->
+	<string name="picDesc">ProPic</string>
+	
 </resources>

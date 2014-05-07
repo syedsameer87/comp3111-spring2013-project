@@ -6,7 +6,6 @@ import java.util.Locale;
 
 import com.plan2gather.component.EventItem;
 import com.plan2gather.component.Utility;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -42,7 +41,7 @@ public class EventInfo extends Activity {
 		TextView eEndT = (TextView) findViewById(R.id.eEndD);
 		TextView ePlaceT = (TextView) findViewById(R.id.ePlaceD);
 		TextView eDescT = (TextView) findViewById(R.id.eDescD);
-		TextView eRepeatT = (TextView) findViewById(R.id.eRepeatD);
+		//TextView eRepeatT = (TextView) findViewById(R.id.eRepeatD);
 		TextView ePartiT = (TextView) findViewById(R.id.ePartiD);
 
 		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm",
@@ -58,8 +57,8 @@ public class EventInfo extends Activity {
 			ePlaceT.setText(e.getLocation());
 		if (e.getDescription() != null)
 			eDescT.setText(e.getDescription());
-		if (e.getRepetition() != null)
-			eRepeatT.setText(e.getRepetition());
+		//if (e.getRepetition() != null)
+			//eRepeatT.setText(e.getRepetition());
 
 	}
 

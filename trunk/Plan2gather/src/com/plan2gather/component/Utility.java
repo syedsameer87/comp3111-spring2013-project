@@ -43,20 +43,19 @@ public class Utility {
 			descriptions.add(cursor.getString(2));
 			startDates.add(cursor.getString(3));
 			endDates.add(cursor.getString(4));
-			repetition.add(cursor.getString(5));
+			//repetition.add(cursor.getString(5));
 			location.add(cursor.getString(6));
 			Log.d("Sam", "Desc:" + cursor.getString(2));
 			Log.d("Sam", "Start:" + cursor.getString(3));
 			Log.d("Sam", "End:" + cursor.getString(4));
-			Log.d("Sam", "repetition:" + cursor.getString(5));
+			//Log.d("Sam", "repetition:" + cursor.getString(5));
 			Log.d("Sam", "location:" + cursor.getString(6));
-			
+
 			CNames[i] = cursor.getString(1);
 			cursor.moveToNext();
 
 			eventList.add(new EventItem(nameOfEvent.get(i), startDates.get(i),
-					endDates.get(i), descriptions.get(i), repetition.get(i),
-					location.get(i)));
+					endDates.get(i), descriptions.get(i), location.get(i)));
 		}
 		cursor.close();
 		return nameOfEvent;

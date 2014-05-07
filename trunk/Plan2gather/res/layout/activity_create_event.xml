@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/eventName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/eName" />
+
+    <EditText
+        android:id="@+id/eventNameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/eventStartTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/eStart" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/startDatePick"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4" />
+
+        <Button
+            android:id="@+id/startTimepick"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="6" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/eventEndTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/eEnd" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/endDatePick"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4" />
+
+        <Button
+            android:id="@+id/endTimepick"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="6" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/eventLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ePlace" />
+
+    <EditText
+        android:id="@+id/eventLocationInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/eventDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/eDesc" />
+
+    <EditText
+        android:id="@+id/eventDescInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/create"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
