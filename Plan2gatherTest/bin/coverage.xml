@@ -1,533 +1,300 @@
-<?xml version="1.0" encoding="UTF-8"?><!-- EMMA v2.0.5312 report, generated Wed May 07 20:02:12 CST 2014 -->
+<?xml version="1.0" encoding="UTF-8"?><!-- EMMA v2.0.5312 report, generated Thu May 08 06:19:16 CST 2014 -->
 
 <report>
   <stats>
     <packages value="3"/>
-    <classes value="22"/>
-    <methods value="109"/>
-    <srcfiles value="13"/>
-    <srclines value="489"/>
+    <classes value="30"/>
+    <methods value="147"/>
+    <srcfiles value="19"/>
+    <srclines value="656"/>
   </stats>
   <data>
     <all name="all classes">
-      <coverage type="class, %" value="100% (22/22)"/>
-      <coverage type="method, %" value="82%  (89/109)"/>
-      <coverage type="block, %" value="78%  (1780/2281)"/>
-      <coverage type="line, %" value="79%  (388.1/489)"/>
+      <coverage type="class, %" value="87%  (26/30)"/>
+      <coverage type="method, %" value="68%  (100/147)"/>
+      <coverage type="block, %" value="66%  (1921/2889)"/>
+      <coverage type="line, %" value="64%  (421.7/656)"/>
 
-      <package name="com.plan2gather.fragments">
-        <coverage type="class, %" value="100% (13/13)"/>
-        <coverage type="method, %" value="89%  (47/53)"/>
-        <coverage type="block, %" value="75%  (848/1127)"/>
-        <coverage type="line, %" value="76%  (172.9/227)"/>
+      <package name="com.plan2gather">
+        <coverage type="class, %" value="50%  (3/6)"/>
+        <coverage type="method, %" value="48%  (13/27)"/>
+        <coverage type="block, %" value="50%  (227/452)"/>
+        <coverage type="line, %" value="52%  (63/122)"/>
 
-        <srcfile name="ProfileFragment.java">
-          <coverage type="class, %" value="100% (2/2)"/>
-          <coverage type="method, %" value="57%  (4/7)"/>
-          <coverage type="block, %" value="33%  (45/136)"/>
-          <coverage type="line, %" value="33%  (10/30)"/>
+        <srcfile name="AddSocle.java">
+          <coverage type="class, %" value="0%   (0/1)"/>
+          <coverage type="method, %" value="0%   (0/6)"/>
+          <coverage type="block, %" value="0%   (0/49)"/>
+          <coverage type="line, %" value="0%   (0/17)"/>
 
-          <class name="ProfileFragment">
-            <coverage type="class, %" value="100% (1/1)"/>
-            <coverage type="method, %" value="60%  (3/5)"/>
-            <coverage type="block, %" value="33%  (39/118)"/>
-            <coverage type="line, %" value="37%  (10/27)"/>
+          <class name="AddSocle">
+            <coverage type="class, %" value="0%   (0/1)"/>
+            <coverage type="method, %" value="0%   (0/6)"/>
+            <coverage type="block, %" value="0%   (0/49)"/>
+            <coverage type="line, %" value="0%   (0/17)"/>
 
-            <method name="getBitmapFromCameraData (Intent, Context): Bitmap">
+            <method name="AddSocle (): void">
               <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/37)"/>
-              <coverage type="line, %" value="0%   (0/8)"/>
+              <coverage type="block, %" value="0%   (0/3)"/>
+              <coverage type="line, %" value="0%   (0/1)"/>
             </method>
             <method name="onActivityResult (int, int, Intent): void">
               <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/42)"/>
-              <coverage type="line, %" value="0%   (0/9)"/>
-            </method>
-            <method name="ProfileFragment (): void">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (3/3)"/>
-              <coverage type="line, %" value="100% (2/2)"/>
+              <coverage type="block, %" value="0%   (0/9)"/>
+              <coverage type="line, %" value="0%   (0/4)"/>
             </method>
             <method name="onCreate (Bundle): void">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (11/11)"/>
-              <coverage type="line, %" value="100% (3/3)"/>
-            </method>
-            <method name="onCreateView (LayoutInflater, ViewGroup, Bundle): View">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (25/25)"/>
-              <coverage type="line, %" value="100% (5/5)"/>
-            </method>
-          </class>
-          <class name="ProfileFragment$1">
-            <coverage type="class, %" value="100% (1/1)"/>
-            <coverage type="method, %" value="50%  (1/2)"/>
-            <coverage type="block, %" value="33%  (6/18)"/>
-            <coverage type="line, %" value="25%  (1/4)"/>
-
-            <method name="onClick (View): void">
               <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/12)"/>
+              <coverage type="block, %" value="0%   (0/7)"/>
               <coverage type="line, %" value="0%   (0/3)"/>
             </method>
-            <method name="ProfileFragment$1 (ProfileFragment): void">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (6/6)"/>
-              <coverage type="line, %" value="100% (1/1)"/>
-            </method>
-          </class>
-        </srcfile>
-        <srcfile name="CalendarFragment.java">
-          <coverage type="class, %" value="100% (5/5)"/>
-          <coverage type="method, %" value="94%  (15/16)"/>
-          <coverage type="block, %" value="79%  (404/511)"/>
-          <coverage type="line, %" value="84%  (74.4/88)"/>
-
-          <class name="CalendarFragment$4">
-            <coverage type="class, %" value="100% (1/1)"/>
-            <coverage type="method, %" value="100% (2/2)"/>
-            <coverage type="block, %" value="68%  (58/85)"/>
-            <coverage type="line, %" value="75%  (10.6/14)"/>
-
-            <method name="run (): void">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="66%  (52/79)"/>
-              <coverage type="line, %" value="73%  (9.6/13)"/>
-            </method>
-            <method name="CalendarFragment$4 (CalendarFragment): void">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (6/6)"/>
-              <coverage type="line, %" value="100% (1/1)"/>
-            </method>
-          </class>
-          <class name="CalendarFragment">
-            <coverage type="class, %" value="100% (1/1)"/>
-            <coverage type="method, %" value="88%  (7/8)"/>
-            <coverage type="block, %" value="76%  (247/327)"/>
-            <coverage type="line, %" value="81%  (44.8/55)"/>
-
-            <method name="showToast (String): void">
+            <method name="onCreateOptionsMenu (Menu): boolean">
               <coverage type="method, %" value="0%   (0/1)"/>
               <coverage type="block, %" value="0%   (0/7)"/>
               <coverage type="line, %" value="0%   (0/2)"/>
             </method>
-            <method name="updateList (ArrayList): void">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="32%  (34/107)"/>
-              <coverage type="line, %" value="45%  (6.8/15)"/>
+            <method name="onOptionsItemSelected (MenuItem): boolean">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/12)"/>
+              <coverage type="line, %" value="0%   (0/4)"/>
             </method>
-            <method name="CalendarFragment (): void">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (9/9)"/>
-              <coverage type="line, %" value="100% (2/2)"/>
-            </method>
-            <method name="onCreate (Bundle): void">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (4/4)"/>
-              <coverage type="line, %" value="100% (2/2)"/>
-            </method>
-            <method name="onCreateView (LayoutInflater, ViewGroup, Bundle): View">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (105/105)"/>
-              <coverage type="line, %" value="100% (20/20)"/>
-            </method>
-            <method name="refreshCalendar (): void">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (25/25)"/>
-              <coverage type="line, %" value="100% (6/6)"/>
-            </method>
-            <method name="setNextMonth (): void">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (35/35)"/>
-              <coverage type="line, %" value="100% (4/4)"/>
-            </method>
-            <method name="setPreviousMonth (): void">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (35/35)"/>
-              <coverage type="line, %" value="100% (4/4)"/>
-            </method>
-          </class>
-          <class name="CalendarFragment$1">
-            <coverage type="class, %" value="100% (1/1)"/>
-            <coverage type="method, %" value="100% (2/2)"/>
-            <coverage type="block, %" value="100% (13/13)"/>
-            <coverage type="line, %" value="100% (4/4)"/>
-
-            <method name="CalendarFragment$1 (CalendarFragment): void">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (6/6)"/>
-              <coverage type="line, %" value="100% (1/1)"/>
-            </method>
-            <method name="onClick (View): void">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (7/7)"/>
-              <coverage type="line, %" value="100% (3/3)"/>
-            </method>
-          </class>
-          <class name="CalendarFragment$2">
-            <coverage type="class, %" value="100% (1/1)"/>
-            <coverage type="method, %" value="100% (2/2)"/>
-            <coverage type="block, %" value="100% (13/13)"/>
-            <coverage type="line, %" value="100% (4/4)"/>
-
-            <method name="CalendarFragment$2 (CalendarFragment): void">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (6/6)"/>
-              <coverage type="line, %" value="100% (1/1)"/>
-            </method>
-            <method name="onClick (View): void">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (7/7)"/>
-              <coverage type="line, %" value="100% (3/3)"/>
-            </method>
-          </class>
-          <class name="CalendarFragment$3">
-            <coverage type="class, %" value="100% (1/1)"/>
-            <coverage type="method, %" value="100% (2/2)"/>
-            <coverage type="block, %" value="100% (73/73)"/>
-            <coverage type="line, %" value="100% (15/15)"/>
-
-            <method name="CalendarFragment$3 (CalendarFragment): void">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (6/6)"/>
-              <coverage type="line, %" value="100% (1/1)"/>
-            </method>
-            <method name="onItemClick (AdapterView, View, int, long): void">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (67/67)"/>
-              <coverage type="line, %" value="100% (14/14)"/>
+            <method name="onPickContact (View): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/11)"/>
+              <coverage type="line, %" value="0%   (0/3)"/>
             </method>
           </class>
         </srcfile>
-        <srcfile name="NavigationDrawerFragment.java">
-          <coverage type="class, %" value="100% (4/4)"/>
-          <coverage type="method, %" value="92%  (24/26)"/>
-          <coverage type="block, %" value="82%  (377/458)"/>
-          <coverage type="line, %" value="80%  (82.6/103)"/>
+        <srcfile name="CreateEvent.java">
+          <coverage type="class, %" value="0%   (0/1)"/>
+          <coverage type="method, %" value="0%   (0/4)"/>
+          <coverage type="block, %" value="0%   (0/29)"/>
+          <coverage type="line, %" value="0%   (0/10)"/>
 
-          <class name="NavigationDrawerFragment$2">
-            <coverage type="class, %" value="100% (1/1)"/>
-            <coverage type="method, %" value="100% (3/3)"/>
-            <coverage type="block, %" value="68%  (39/57)"/>
-            <coverage type="line, %" value="67%  (10/15)"/>
+          <class name="CreateEvent">
+            <coverage type="class, %" value="0%   (0/1)"/>
+            <coverage type="method, %" value="0%   (0/4)"/>
+            <coverage type="block, %" value="0%   (0/29)"/>
+            <coverage type="line, %" value="0%   (0/10)"/>
 
-            <method name="onDrawerOpened (View): void">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="48%  (16/33)"/>
-              <coverage type="line, %" value="56%  (5/9)"/>
-            </method>
-            <method name="onDrawerClosed (View): void">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="92%  (12/13)"/>
-              <coverage type="line, %" value="80%  (4/5)"/>
-            </method>
-            <method name="NavigationDrawerFragment$2 (NavigationDrawerFragment, Activity, DrawerLayout, int, int, int): void">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (11/11)"/>
-              <coverage type="line, %" value="100% (1/1)"/>
-            </method>
-          </class>
-          <class name="NavigationDrawerFragment">
-            <coverage type="class, %" value="100% (1/1)"/>
-            <coverage type="method, %" value="89%  (17/19)"/>
-            <coverage type="block, %" value="83%  (316/379)"/>
-            <coverage type="line, %" value="81%  (67.6/83)"/>
-
-            <method name="access$102 (NavigationDrawerFragment, boolean): boolean">
+            <method name="CreateEvent (): void">
               <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/5)"/>
+              <coverage type="block, %" value="0%   (0/3)"/>
               <coverage type="line, %" value="0%   (0/1)"/>
             </method>
-            <method name="onConfigurationChanged (Configuration): void">
+            <method name="onCreate (Bundle): void">
               <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/8)"/>
+              <coverage type="block, %" value="0%   (0/7)"/>
               <coverage type="line, %" value="0%   (0/3)"/>
             </method>
+            <method name="onCreateOptionsMenu (Menu): boolean">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/7)"/>
+              <coverage type="line, %" value="0%   (0/2)"/>
+            </method>
             <method name="onOptionsItemSelected (MenuItem): boolean">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="20%  (7/35)"/>
-              <coverage type="line, %" value="22%  (2/9)"/>
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/12)"/>
+              <coverage type="line, %" value="0%   (0/4)"/>
             </method>
-            <method name="onAttach (Activity): void">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="60%  (9/15)"/>
-              <coverage type="line, %" value="67%  (4/6)"/>
+          </class>
+        </srcfile>
+        <srcfile name="EventInfo.java">
+          <coverage type="class, %" value="0%   (0/1)"/>
+          <coverage type="method, %" value="0%   (0/4)"/>
+          <coverage type="block, %" value="0%   (0/147)"/>
+          <coverage type="line, %" value="0%   (0/32)"/>
+
+          <class name="EventInfo">
+            <coverage type="class, %" value="0%   (0/1)"/>
+            <coverage type="method, %" value="0%   (0/4)"/>
+            <coverage type="block, %" value="0%   (0/147)"/>
+            <coverage type="line, %" value="0%   (0/32)"/>
+
+            <method name="EventInfo (): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/3)"/>
+              <coverage type="line, %" value="0%   (0/1)"/>
             </method>
-            <method name="setUp (int, DrawerLayout): void">
+            <method name="onCreate (Bundle): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/131)"/>
+              <coverage type="line, %" value="0%   (0/28)"/>
+            </method>
+            <method name="onCreateOptionsMenu (Menu): boolean">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/9)"/>
+              <coverage type="line, %" value="0%   (0/2)"/>
+            </method>
+            <method name="onOptionsItemSelected (MenuItem): boolean">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/4)"/>
+              <coverage type="line, %" value="0%   (0/1)"/>
+            </method>
+          </class>
+        </srcfile>
+        <srcfile name="LoginActivity.java">
+          <coverage type="class, %" value="100% (2/2)"/>
+          <coverage type="method, %" value="100% (7/7)"/>
+          <coverage type="block, %" value="100% (121/121)"/>
+          <coverage type="line, %" value="100% (30/30)"/>
+
+          <class name="LoginActivity">
+            <coverage type="class, %" value="100% (1/1)"/>
+            <coverage type="method, %" value="100% (5/5)"/>
+            <coverage type="block, %" value="100% (111/111)"/>
+            <coverage type="line, %" value="100% (27/27)"/>
+
+            <method name="&lt;static initializer&gt;">
               <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="88%  (57/65)"/>
-              <coverage type="line, %" value="92%  (11.9/13)"/>
+              <coverage type="block, %" value="100% (12/12)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+            <method name="LoginActivity (): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (3/3)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+            <method name="attemptLogin (): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (62/62)"/>
+              <coverage type="line, %" value="100% (17/17)"/>
             </method>
             <method name="onCreate (Bundle): void">
               <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="93%  (102/110)"/>
-              <coverage type="line, %" value="87%  (13/15)"/>
+              <coverage type="block, %" value="100% (28/28)"/>
+              <coverage type="line, %" value="100% (6/6)"/>
             </method>
-            <method name="NavigationDrawerFragment (): void">
+            <method name="onCreateOptionsMenu (Menu): boolean">
               <coverage type="method, %" value="100% (1/1)"/>
               <coverage type="block, %" value="100% (6/6)"/>
-              <coverage type="line, %" value="100% (3/3)"/>
+              <coverage type="line, %" value="100% (2/2)"/>
             </method>
-            <method name="access$000 (NavigationDrawerFragment, int): void">
+          </class>
+          <class name="LoginActivity$1">
+            <coverage type="class, %" value="100% (1/1)"/>
+            <coverage type="method, %" value="100% (2/2)"/>
+            <coverage type="block, %" value="100% (10/10)"/>
+            <coverage type="line, %" value="100% (3/3)"/>
+
+            <method name="LoginActivity$1 (LoginActivity): void">
               <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (4/4)"/>
+              <coverage type="block, %" value="100% (6/6)"/>
               <coverage type="line, %" value="100% (1/1)"/>
             </method>
-            <method name="access$100 (NavigationDrawerFragment): boolean">
+            <method name="onClick (View): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (4/4)"/>
+              <coverage type="line, %" value="100% (2/2)"/>
+            </method>
+          </class>
+        </srcfile>
+        <srcfile name="MainActivity.java">
+          <coverage type="class, %" value="100% (1/1)"/>
+          <coverage type="method, %" value="100% (6/6)"/>
+          <coverage type="block, %" value="100% (106/106)"/>
+          <coverage type="line, %" value="100% (33/33)"/>
+
+          <class name="MainActivity">
+            <coverage type="class, %" value="100% (1/1)"/>
+            <coverage type="method, %" value="100% (6/6)"/>
+            <coverage type="block, %" value="100% (106/106)"/>
+            <coverage type="line, %" value="100% (33/33)"/>
+
+            <method name="MainActivity (): void">
               <coverage type="method, %" value="100% (1/1)"/>
               <coverage type="block, %" value="100% (3/3)"/>
               <coverage type="line, %" value="100% (1/1)"/>
             </method>
-            <method name="access$200 (NavigationDrawerFragment): ActionBarDrawerToggle">
+            <method name="onCreate (Bundle): void">
               <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (3/3)"/>
-              <coverage type="line, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (30/30)"/>
+              <coverage type="line, %" value="100% (7/7)"/>
             </method>
-            <method name="getActionBar (): ActionBar">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (4/4)"/>
-              <coverage type="line, %" value="100% (1/1)"/>
-            </method>
-            <method name="isDrawerOpen (): boolean">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (13/13)"/>
-              <coverage type="line, %" value="100% (1/1)"/>
-            </method>
-            <method name="onActivityCreated (Bundle): void">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (7/7)"/>
-              <coverage type="line, %" value="100% (3/3)"/>
-            </method>
-            <method name="onCreateOptionsMenu (Menu, MenuInflater): void">
+            <method name="onCreateOptionsMenu (Menu): boolean">
               <coverage type="method, %" value="100% (1/1)"/>
               <coverage type="block, %" value="100% (17/17)"/>
               <coverage type="line, %" value="100% (5/5)"/>
             </method>
-            <method name="onCreateView (LayoutInflater, ViewGroup, Bundle): View">
+            <method name="onNavigationDrawerItemSelected (int): void">
               <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (29/29)"/>
-              <coverage type="line, %" value="100% (4/4)"/>
+              <coverage type="block, %" value="100% (39/39)"/>
+              <coverage type="line, %" value="100% (14/14)"/>
             </method>
-            <method name="onDetach (): void">
+            <method name="onOptionsItemSelected (MenuItem): boolean">
               <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (6/6)"/>
-              <coverage type="line, %" value="100% (3/3)"/>
+              <coverage type="block, %" value="100% (4/4)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
             </method>
-            <method name="onSaveInstanceState (Bundle): void">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (9/9)"/>
-              <coverage type="line, %" value="100% (3/3)"/>
-            </method>
-            <method name="selectItem (int): void">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (27/27)"/>
-              <coverage type="line, %" value="100% (8/8)"/>
-            </method>
-            <method name="showGlobalContextActionBar (): void">
+            <method name="restoreActionBar (): void">
               <coverage type="method, %" value="100% (1/1)"/>
               <coverage type="block, %" value="100% (13/13)"/>
               <coverage type="line, %" value="100% (5/5)"/>
-            </method>
-          </class>
-          <class name="NavigationDrawerFragment$1">
-            <coverage type="class, %" value="100% (1/1)"/>
-            <coverage type="method, %" value="100% (2/2)"/>
-            <coverage type="block, %" value="100% (11/11)"/>
-            <coverage type="line, %" value="100% (3/3)"/>
-
-            <method name="NavigationDrawerFragment$1 (NavigationDrawerFragment): void">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (6/6)"/>
-              <coverage type="line, %" value="100% (1/1)"/>
-            </method>
-            <method name="onItemClick (AdapterView, View, int, long): void">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (5/5)"/>
-              <coverage type="line, %" value="100% (2/2)"/>
-            </method>
-          </class>
-          <class name="NavigationDrawerFragment$3">
-            <coverage type="class, %" value="100% (1/1)"/>
-            <coverage type="method, %" value="100% (2/2)"/>
-            <coverage type="block, %" value="100% (11/11)"/>
-            <coverage type="line, %" value="100% (3/3)"/>
-
-            <method name="NavigationDrawerFragment$3 (NavigationDrawerFragment): void">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (6/6)"/>
-              <coverage type="line, %" value="100% (1/1)"/>
-            </method>
-            <method name="run (): void">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (5/5)"/>
-              <coverage type="line, %" value="100% (2/2)"/>
-            </method>
-          </class>
-        </srcfile>
-        <srcfile name="SettingFragment.java">
-          <coverage type="class, %" value="100% (1/1)"/>
-          <coverage type="method, %" value="100% (2/2)"/>
-          <coverage type="block, %" value="100% (11/11)"/>
-          <coverage type="line, %" value="100% (3/3)"/>
-
-          <class name="SettingFragment">
-            <coverage type="class, %" value="100% (1/1)"/>
-            <coverage type="method, %" value="100% (2/2)"/>
-            <coverage type="block, %" value="100% (11/11)"/>
-            <coverage type="line, %" value="100% (3/3)"/>
-
-            <method name="SettingFragment (): void">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (3/3)"/>
-              <coverage type="line, %" value="100% (1/1)"/>
-            </method>
-            <method name="onCreateView (LayoutInflater, ViewGroup, Bundle): View">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (8/8)"/>
-              <coverage type="line, %" value="100% (2/2)"/>
-            </method>
-          </class>
-        </srcfile>
-        <srcfile name="SocleFragment.java">
-          <coverage type="class, %" value="100% (1/1)"/>
-          <coverage type="method, %" value="100% (2/2)"/>
-          <coverage type="block, %" value="100% (11/11)"/>
-          <coverage type="line, %" value="100% (3/3)"/>
-
-          <class name="SocleFragment">
-            <coverage type="class, %" value="100% (1/1)"/>
-            <coverage type="method, %" value="100% (2/2)"/>
-            <coverage type="block, %" value="100% (11/11)"/>
-            <coverage type="line, %" value="100% (3/3)"/>
-
-            <method name="SocleFragment (): void">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (3/3)"/>
-              <coverage type="line, %" value="100% (1/1)"/>
-            </method>
-            <method name="onCreateView (LayoutInflater, ViewGroup, Bundle): View">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (8/8)"/>
-              <coverage type="line, %" value="100% (2/2)"/>
             </method>
           </class>
         </srcfile>
       </package>
       <package name="com.plan2gather.component">
-        <coverage type="class, %" value="100% (6/6)"/>
-        <coverage type="method, %" value="67%  (29/43)"/>
-        <coverage type="block, %" value="76%  (705/927)"/>
-        <coverage type="line, %" value="76%  (152.2/199)"/>
+        <coverage type="class, %" value="89%  (8/9)"/>
+        <coverage type="method, %" value="56%  (34/61)"/>
+        <coverage type="block, %" value="61%  (751/1224)"/>
+        <coverage type="line, %" value="59%  (166.8/282)"/>
 
-        <srcfile name="Utility.java">
-          <coverage type="class, %" value="100% (1/1)"/>
-          <coverage type="method, %" value="60%  (3/5)"/>
-          <coverage type="block, %" value="47%  (115/245)"/>
-          <coverage type="line, %" value="53%  (23.8/45)"/>
+        <srcfile name="JSONParser.java">
+          <coverage type="class, %" value="0%   (0/1)"/>
+          <coverage type="method, %" value="0%   (0/3)"/>
+          <coverage type="block, %" value="0%   (0/167)"/>
+          <coverage type="line, %" value="0%   (0/44)"/>
 
-          <class name="Utility">
-            <coverage type="class, %" value="100% (1/1)"/>
-            <coverage type="method, %" value="60%  (3/5)"/>
-            <coverage type="block, %" value="47%  (115/245)"/>
-            <coverage type="line, %" value="53%  (23.8/45)"/>
+          <class name="JSONParser">
+            <coverage type="class, %" value="0%   (0/1)"/>
+            <coverage type="method, %" value="0%   (0/3)"/>
+            <coverage type="block, %" value="0%   (0/167)"/>
+            <coverage type="line, %" value="0%   (0/44)"/>
 
-            <method name="Utility (): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/3)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="getTime (long): String">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/16)"/>
-              <coverage type="line, %" value="0%   (0/4)"/>
-            </method>
-            <method name="readCalendarEvent (Context): ArrayList">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="39%  (70/181)"/>
-              <coverage type="line, %" value="44%  (12.8/29)"/>
-            </method>
             <method name="&lt;static initializer&gt;">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (29/29)"/>
-              <coverage type="line, %" value="100% (7/7)"/>
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/7)"/>
+              <coverage type="line, %" value="0%   (0/3)"/>
             </method>
-            <method name="getDate (long): String">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (16/16)"/>
-              <coverage type="line, %" value="100% (4/4)"/>
-            </method>
-          </class>
-        </srcfile>
-        <srcfile name="EventItem.java">
-          <coverage type="class, %" value="100% (1/1)"/>
-          <coverage type="method, %" value="50%  (4/8)"/>
-          <coverage type="block, %" value="58%  (21/36)"/>
-          <coverage type="line, %" value="50%  (8/16)"/>
-
-          <class name="EventItem">
-            <coverage type="class, %" value="100% (1/1)"/>
-            <coverage type="method, %" value="50%  (4/8)"/>
-            <coverage type="block, %" value="58%  (21/36)"/>
-            <coverage type="line, %" value="50%  (8/16)"/>
-
-            <method name="EventItem (): void">
+            <method name="JSONParser (): void">
               <coverage type="method, %" value="0%   (0/1)"/>
               <coverage type="block, %" value="0%   (0/3)"/>
               <coverage type="line, %" value="0%   (0/2)"/>
             </method>
-            <method name="setEndTime (String): void">
+            <method name="makeHttpRequest (String, String, List): JSONObject">
               <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/4)"/>
-              <coverage type="line, %" value="0%   (0/2)"/>
-            </method>
-            <method name="setStartTime (String): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/4)"/>
-              <coverage type="line, %" value="0%   (0/2)"/>
-            </method>
-            <method name="setTitle (String): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/4)"/>
-              <coverage type="line, %" value="0%   (0/2)"/>
-            </method>
-            <method name="EventItem (String, String, String): void">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (12/12)"/>
-              <coverage type="line, %" value="100% (5/5)"/>
-            </method>
-            <method name="getEndTime (): String">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (3/3)"/>
-              <coverage type="line, %" value="100% (1/1)"/>
-            </method>
-            <method name="getStartTime (): String">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (3/3)"/>
-              <coverage type="line, %" value="100% (1/1)"/>
-            </method>
-            <method name="getTitle (): String">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (3/3)"/>
-              <coverage type="line, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="0%   (0/157)"/>
+              <coverage type="line, %" value="0%   (0/39)"/>
             </method>
           </class>
         </srcfile>
         <srcfile name="NavMenuItems.java">
           <coverage type="class, %" value="100% (1/1)"/>
-          <coverage type="method, %" value="55%  (6/11)"/>
-          <coverage type="block, %" value="66%  (48/73)"/>
-          <coverage type="line, %" value="60%  (15.6/26)"/>
+          <coverage type="method, %" value="36%  (4/11)"/>
+          <coverage type="block, %" value="33%  (24/73)"/>
+          <coverage type="line, %" value="29%  (7.7/26)"/>
 
           <class name="NavMenuItems">
             <coverage type="class, %" value="100% (1/1)"/>
-            <coverage type="method, %" value="55%  (6/11)"/>
-            <coverage type="block, %" value="66%  (48/73)"/>
-            <coverage type="line, %" value="60%  (15.6/26)"/>
+            <coverage type="method, %" value="36%  (4/11)"/>
+            <coverage type="block, %" value="33%  (24/73)"/>
+            <coverage type="line, %" value="29%  (7.7/26)"/>
 
             <method name="NavMenuItems (): void">
               <coverage type="method, %" value="0%   (0/1)"/>
               <coverage type="block, %" value="0%   (0/9)"/>
               <coverage type="line, %" value="0%   (0/4)"/>
+            </method>
+            <method name="NavMenuItems (String, int, boolean, String): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/21)"/>
+              <coverage type="line, %" value="0%   (0/8)"/>
+            </method>
+            <method name="getCount (): String">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/3)"/>
+              <coverage type="line, %" value="0%   (0/1)"/>
             </method>
             <method name="setCount (String): void">
               <coverage type="method, %" value="0%   (0/1)"/>
@@ -554,16 +321,6 @@
               <coverage type="block, %" value="100% (15/15)"/>
               <coverage type="line, %" value="100% (6/6)"/>
             </method>
-            <method name="NavMenuItems (String, int, boolean, String): void">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (21/21)"/>
-              <coverage type="line, %" value="100% (8/8)"/>
-            </method>
-            <method name="getCount (): String">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (3/3)"/>
-              <coverage type="line, %" value="100% (1/1)"/>
-            </method>
             <method name="getCounterVisibility (): boolean">
               <coverage type="method, %" value="100% (1/1)"/>
               <coverage type="block, %" value="100% (3/3)"/>
@@ -575,6 +332,207 @@
               <coverage type="line, %" value="100% (1/1)"/>
             </method>
             <method name="getTitle (): String">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (3/3)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+          </class>
+        </srcfile>
+        <srcfile name="EventItem.java">
+          <coverage type="class, %" value="100% (1/1)"/>
+          <coverage type="method, %" value="31%  (4/13)"/>
+          <coverage type="block, %" value="36%  (27/74)"/>
+          <coverage type="line, %" value="32%  (10/31)"/>
+
+          <class name="EventItem">
+            <coverage type="class, %" value="100% (1/1)"/>
+            <coverage type="method, %" value="31%  (4/13)"/>
+            <coverage type="block, %" value="36%  (27/74)"/>
+            <coverage type="line, %" value="32%  (10/31)"/>
+
+            <method name="EventItem (): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/3)"/>
+              <coverage type="line, %" value="0%   (0/2)"/>
+            </method>
+            <method name="EventItem (String, String, String, String, String): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/18)"/>
+              <coverage type="line, %" value="0%   (0/7)"/>
+            </method>
+            <method name="getDescription (): String">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/3)"/>
+              <coverage type="line, %" value="0%   (0/1)"/>
+            </method>
+            <method name="getLocation (): String">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/3)"/>
+              <coverage type="line, %" value="0%   (0/1)"/>
+            </method>
+            <method name="setDescription (String): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/4)"/>
+              <coverage type="line, %" value="0%   (0/2)"/>
+            </method>
+            <method name="setEndTime (String): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/4)"/>
+              <coverage type="line, %" value="0%   (0/2)"/>
+            </method>
+            <method name="setLocation (String): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/4)"/>
+              <coverage type="line, %" value="0%   (0/2)"/>
+            </method>
+            <method name="setStartTime (String): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/4)"/>
+              <coverage type="line, %" value="0%   (0/2)"/>
+            </method>
+            <method name="setTitle (String): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/4)"/>
+              <coverage type="line, %" value="0%   (0/2)"/>
+            </method>
+            <method name="EventItem (String, String, String): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (18/18)"/>
+              <coverage type="line, %" value="100% (7/7)"/>
+            </method>
+            <method name="getEndTime (): String">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (3/3)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+            <method name="getStartTime (): String">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (3/3)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+            <method name="getTitle (): String">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (3/3)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+          </class>
+        </srcfile>
+        <srcfile name="Utility.java">
+          <coverage type="class, %" value="100% (1/1)"/>
+          <coverage type="method, %" value="60%  (3/5)"/>
+          <coverage type="block, %" value="45%  (115/253)"/>
+          <coverage type="line, %" value="57%  (23.4/41)"/>
+
+          <class name="Utility">
+            <coverage type="class, %" value="100% (1/1)"/>
+            <coverage type="method, %" value="60%  (3/5)"/>
+            <coverage type="block, %" value="45%  (115/253)"/>
+            <coverage type="line, %" value="57%  (23.4/41)"/>
+
+            <method name="Utility (): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/3)"/>
+              <coverage type="line, %" value="0%   (0/1)"/>
+            </method>
+            <method name="getTime (long): String">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/16)"/>
+              <coverage type="line, %" value="0%   (0/4)"/>
+            </method>
+            <method name="readCalendarEvent (Context): ArrayList">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="37%  (70/189)"/>
+              <coverage type="line, %" value="49%  (12.4/25)"/>
+            </method>
+            <method name="&lt;static initializer&gt;">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (29/29)"/>
+              <coverage type="line, %" value="100% (7/7)"/>
+            </method>
+            <method name="getDate (long): String">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (16/16)"/>
+              <coverage type="line, %" value="100% (4/4)"/>
+            </method>
+          </class>
+        </srcfile>
+        <srcfile name="UserItem.java">
+          <coverage type="class, %" value="100% (1/1)"/>
+          <coverage type="method, %" value="50%  (3/6)"/>
+          <coverage type="block, %" value="58%  (15/26)"/>
+          <coverage type="line, %" value="50%  (6/12)"/>
+
+          <class name="UserItem">
+            <coverage type="class, %" value="100% (1/1)"/>
+            <coverage type="method, %" value="50%  (3/6)"/>
+            <coverage type="block, %" value="58%  (15/26)"/>
+            <coverage type="line, %" value="50%  (6/12)"/>
+
+            <method name="UserItem (): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/3)"/>
+              <coverage type="line, %" value="0%   (0/2)"/>
+            </method>
+            <method name="setID (String): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/4)"/>
+              <coverage type="line, %" value="0%   (0/2)"/>
+            </method>
+            <method name="setName (String): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/4)"/>
+              <coverage type="line, %" value="0%   (0/2)"/>
+            </method>
+            <method name="UserItem (String, String): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (9/9)"/>
+              <coverage type="line, %" value="100% (4/4)"/>
+            </method>
+            <method name="getID (): String">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (3/3)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+            <method name="getName (): String">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (3/3)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+          </class>
+        </srcfile>
+        <srcfile name="NavMenuAdapter.java">
+          <coverage type="class, %" value="100% (1/1)"/>
+          <coverage type="method, %" value="80%  (4/5)"/>
+          <coverage type="block, %" value="84%  (72/86)"/>
+          <coverage type="line, %" value="89%  (17/19)"/>
+
+          <class name="NavMenuAdapter">
+            <coverage type="class, %" value="100% (1/1)"/>
+            <coverage type="method, %" value="80%  (4/5)"/>
+            <coverage type="block, %" value="84%  (72/86)"/>
+            <coverage type="line, %" value="89%  (17/19)"/>
+
+            <method name="getItem (int): Object">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/5)"/>
+              <coverage type="line, %" value="0%   (0/1)"/>
+            </method>
+            <method name="getView (int, View, ViewGroup): View">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="86%  (56/65)"/>
+              <coverage type="line, %" value="92%  (11/12)"/>
+            </method>
+            <method name="NavMenuAdapter (Context, ArrayList): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (9/9)"/>
+              <coverage type="line, %" value="100% (4/4)"/>
+            </method>
+            <method name="getCount (): int">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (4/4)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+            <method name="getItemId (int): long">
               <coverage type="method, %" value="100% (1/1)"/>
               <coverage type="block, %" value="100% (3/3)"/>
               <coverage type="line, %" value="100% (1/1)"/>
@@ -679,26 +637,21 @@
             </method>
           </class>
         </srcfile>
-        <srcfile name="NavMenuAdapter.java">
+        <srcfile name="UserListAdapter.java">
           <coverage type="class, %" value="100% (1/1)"/>
-          <coverage type="method, %" value="80%  (4/5)"/>
-          <coverage type="block, %" value="94%  (81/86)"/>
-          <coverage type="line, %" value="95%  (18/19)"/>
+          <coverage type="method, %" value="100% (4/4)"/>
+          <coverage type="block, %" value="100% (58/58)"/>
+          <coverage type="line, %" value="100% (16/16)"/>
 
-          <class name="NavMenuAdapter">
+          <class name="UserListAdapter">
             <coverage type="class, %" value="100% (1/1)"/>
-            <coverage type="method, %" value="80%  (4/5)"/>
-            <coverage type="block, %" value="94%  (81/86)"/>
-            <coverage type="line, %" value="95%  (18/19)"/>
+            <coverage type="method, %" value="100% (4/4)"/>
+            <coverage type="block, %" value="100% (58/58)"/>
+            <coverage type="line, %" value="100% (16/16)"/>
 
-            <method name="getItem (int): Object">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/5)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="NavMenuAdapter (Context, ArrayList): void">
+            <method name="UserListAdapter (Context, ArrayList): void">
               <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (9/9)"/>
+              <coverage type="block, %" value="100% (11/11)"/>
               <coverage type="line, %" value="100% (4/4)"/>
             </method>
             <method name="getCount (): int">
@@ -706,122 +659,457 @@
               <coverage type="block, %" value="100% (4/4)"/>
               <coverage type="line, %" value="100% (1/1)"/>
             </method>
-            <method name="getItemId (int): long">
+            <method name="getItem (int): UserItem">
               <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (3/3)"/>
+              <coverage type="block, %" value="100% (6/6)"/>
               <coverage type="line, %" value="100% (1/1)"/>
             </method>
             <method name="getView (int, View, ViewGroup): View">
               <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (65/65)"/>
-              <coverage type="line, %" value="100% (12/12)"/>
+              <coverage type="block, %" value="100% (37/37)"/>
+              <coverage type="line, %" value="100% (10/10)"/>
             </method>
           </class>
         </srcfile>
       </package>
-      <package name="com.plan2gather">
-        <coverage type="class, %" value="100% (3/3)"/>
-        <coverage type="method, %" value="100% (13/13)"/>
-        <coverage type="block, %" value="100% (227/227)"/>
-        <coverage type="line, %" value="100% (63/63)"/>
+      <package name="com.plan2gather.fragments">
+        <coverage type="class, %" value="100% (15/15)"/>
+        <coverage type="method, %" value="90%  (53/59)"/>
+        <coverage type="block, %" value="78%  (943/1213)"/>
+        <coverage type="line, %" value="76%  (191.9/252)"/>
 
-        <srcfile name="LoginActivity.java">
+        <srcfile name="SocleFragment.java">
           <coverage type="class, %" value="100% (2/2)"/>
-          <coverage type="method, %" value="100% (7/7)"/>
-          <coverage type="block, %" value="100% (121/121)"/>
-          <coverage type="line, %" value="100% (30/30)"/>
+          <coverage type="method, %" value="71%  (5/7)"/>
+          <coverage type="block, %" value="50%  (81/161)"/>
+          <coverage type="line, %" value="45%  (17/38)"/>
 
-          <class name="LoginActivity">
+          <class name="SocleFragment">
             <coverage type="class, %" value="100% (1/1)"/>
-            <coverage type="method, %" value="100% (5/5)"/>
-            <coverage type="block, %" value="100% (111/111)"/>
-            <coverage type="line, %" value="100% (27/27)"/>
+            <coverage type="method, %" value="80%  (4/5)"/>
+            <coverage type="block, %" value="49%  (75/154)"/>
+            <coverage type="line, %" value="46%  (17/37)"/>
 
-            <method name="&lt;static initializer&gt;">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (12/12)"/>
-              <coverage type="line, %" value="100% (1/1)"/>
+            <method name="updateUserList (UserItem): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/33)"/>
+              <coverage type="line, %" value="0%   (0/9)"/>
             </method>
-            <method name="LoginActivity (): void">
+            <method name="readUserList (ArrayList): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="45%  (38/84)"/>
+              <coverage type="line, %" value="39%  (7/18)"/>
+            </method>
+            <method name="SocleFragment (): void">
               <coverage type="method, %" value="100% (1/1)"/>
               <coverage type="block, %" value="100% (3/3)"/>
-              <coverage type="line, %" value="100% (1/1)"/>
-            </method>
-            <method name="attemptLogin (): void">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (62/62)"/>
-              <coverage type="line, %" value="100% (17/17)"/>
+              <coverage type="line, %" value="100% (2/2)"/>
             </method>
             <method name="onCreate (Bundle): void">
               <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (28/28)"/>
-              <coverage type="line, %" value="100% (6/6)"/>
+              <coverage type="block, %" value="100% (11/11)"/>
+              <coverage type="line, %" value="100% (4/4)"/>
             </method>
-            <method name="onCreateOptionsMenu (Menu): boolean">
+            <method name="onCreateView (LayoutInflater, ViewGroup, Bundle): View">
               <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (6/6)"/>
-              <coverage type="line, %" value="100% (2/2)"/>
+              <coverage type="block, %" value="100% (23/23)"/>
+              <coverage type="line, %" value="100% (4/4)"/>
             </method>
           </class>
-          <class name="LoginActivity$1">
+          <class name="SocleFragment$1">
+            <coverage type="class, %" value="100% (1/1)"/>
+            <coverage type="method, %" value="50%  (1/2)"/>
+            <coverage type="block, %" value="86%  (6/7)"/>
+            <coverage type="line, %" value="50%  (1/2)"/>
+
+            <method name="onItemClick (AdapterView, View, int, long): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/1)"/>
+              <coverage type="line, %" value="0%   (0/1)"/>
+            </method>
+            <method name="SocleFragment$1 (SocleFragment): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (6/6)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+          </class>
+        </srcfile>
+        <srcfile name="CalendarFragment.java">
+          <coverage type="class, %" value="100% (6/6)"/>
+          <coverage type="method, %" value="89%  (16/18)"/>
+          <coverage type="block, %" value="80%  (417/524)"/>
+          <coverage type="line, %" value="81%  (75.4/93)"/>
+
+          <class name="CalendarFragment$4">
+            <coverage type="class, %" value="100% (1/1)"/>
+            <coverage type="method, %" value="50%  (1/2)"/>
+            <coverage type="block, %" value="15%  (6/39)"/>
+            <coverage type="line, %" value="12%  (1/8)"/>
+
+            <method name="onItemClick (AdapterView, View, int, long): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/33)"/>
+              <coverage type="line, %" value="0%   (0/7)"/>
+            </method>
+            <method name="CalendarFragment$4 (CalendarFragment): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (6/6)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+          </class>
+          <class name="CalendarFragment$5">
             <coverage type="class, %" value="100% (1/1)"/>
             <coverage type="method, %" value="100% (2/2)"/>
-            <coverage type="block, %" value="100% (10/10)"/>
-            <coverage type="line, %" value="100% (3/3)"/>
+            <coverage type="block, %" value="68%  (58/85)"/>
+            <coverage type="line, %" value="75%  (10.6/14)"/>
 
-            <method name="LoginActivity$1 (LoginActivity): void">
+            <method name="run (): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="66%  (52/79)"/>
+              <coverage type="line, %" value="73%  (9.6/13)"/>
+            </method>
+            <method name="CalendarFragment$5 (CalendarFragment): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (6/6)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+          </class>
+          <class name="CalendarFragment">
+            <coverage type="class, %" value="100% (1/1)"/>
+            <coverage type="method, %" value="88%  (7/8)"/>
+            <coverage type="block, %" value="84%  (254/301)"/>
+            <coverage type="line, %" value="86%  (45.8/53)"/>
+
+            <method name="showToast (String): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/7)"/>
+              <coverage type="line, %" value="0%   (0/2)"/>
+            </method>
+            <method name="updateList (ArrayList): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="46%  (34/74)"/>
+              <coverage type="line, %" value="57%  (6.8/12)"/>
+            </method>
+            <method name="CalendarFragment (): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (9/9)"/>
+              <coverage type="line, %" value="100% (2/2)"/>
+            </method>
+            <method name="onCreate (Bundle): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (4/4)"/>
+              <coverage type="line, %" value="100% (2/2)"/>
+            </method>
+            <method name="onCreateView (LayoutInflater, ViewGroup, Bundle): View">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (112/112)"/>
+              <coverage type="line, %" value="100% (21/21)"/>
+            </method>
+            <method name="refreshCalendar (): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (25/25)"/>
+              <coverage type="line, %" value="100% (6/6)"/>
+            </method>
+            <method name="setNextMonth (): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (35/35)"/>
+              <coverage type="line, %" value="100% (4/4)"/>
+            </method>
+            <method name="setPreviousMonth (): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (35/35)"/>
+              <coverage type="line, %" value="100% (4/4)"/>
+            </method>
+          </class>
+          <class name="CalendarFragment$1">
+            <coverage type="class, %" value="100% (1/1)"/>
+            <coverage type="method, %" value="100% (2/2)"/>
+            <coverage type="block, %" value="100% (13/13)"/>
+            <coverage type="line, %" value="100% (4/4)"/>
+
+            <method name="CalendarFragment$1 (CalendarFragment): void">
               <coverage type="method, %" value="100% (1/1)"/>
               <coverage type="block, %" value="100% (6/6)"/>
               <coverage type="line, %" value="100% (1/1)"/>
             </method>
             <method name="onClick (View): void">
               <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (4/4)"/>
-              <coverage type="line, %" value="100% (2/2)"/>
+              <coverage type="block, %" value="100% (7/7)"/>
+              <coverage type="line, %" value="100% (3/3)"/>
+            </method>
+          </class>
+          <class name="CalendarFragment$2">
+            <coverage type="class, %" value="100% (1/1)"/>
+            <coverage type="method, %" value="100% (2/2)"/>
+            <coverage type="block, %" value="100% (13/13)"/>
+            <coverage type="line, %" value="100% (4/4)"/>
+
+            <method name="CalendarFragment$2 (CalendarFragment): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (6/6)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+            <method name="onClick (View): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (7/7)"/>
+              <coverage type="line, %" value="100% (3/3)"/>
+            </method>
+          </class>
+          <class name="CalendarFragment$3">
+            <coverage type="class, %" value="100% (1/1)"/>
+            <coverage type="method, %" value="100% (2/2)"/>
+            <coverage type="block, %" value="100% (73/73)"/>
+            <coverage type="line, %" value="100% (15/15)"/>
+
+            <method name="CalendarFragment$3 (CalendarFragment): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (6/6)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+            <method name="onItemClick (AdapterView, View, int, long): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (67/67)"/>
+              <coverage type="line, %" value="100% (14/14)"/>
             </method>
           </class>
         </srcfile>
-        <srcfile name="MainActivity.java">
-          <coverage type="class, %" value="100% (1/1)"/>
-          <coverage type="method, %" value="100% (6/6)"/>
-          <coverage type="block, %" value="100% (106/106)"/>
-          <coverage type="line, %" value="100% (33/33)"/>
+        <srcfile name="NavigationDrawerFragment.java">
+          <coverage type="class, %" value="100% (4/4)"/>
+          <coverage type="method, %" value="92%  (24/26)"/>
+          <coverage type="block, %" value="82%  (375/458)"/>
+          <coverage type="line, %" value="79%  (82.6/104)"/>
 
-          <class name="MainActivity">
+          <class name="NavigationDrawerFragment$2">
             <coverage type="class, %" value="100% (1/1)"/>
-            <coverage type="method, %" value="100% (6/6)"/>
-            <coverage type="block, %" value="100% (106/106)"/>
-            <coverage type="line, %" value="100% (33/33)"/>
+            <coverage type="method, %" value="100% (3/3)"/>
+            <coverage type="block, %" value="68%  (39/57)"/>
+            <coverage type="line, %" value="67%  (10/15)"/>
 
-            <method name="MainActivity (): void">
+            <method name="onDrawerOpened (View): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="48%  (16/33)"/>
+              <coverage type="line, %" value="56%  (5/9)"/>
+            </method>
+            <method name="onDrawerClosed (View): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="92%  (12/13)"/>
+              <coverage type="line, %" value="80%  (4/5)"/>
+            </method>
+            <method name="NavigationDrawerFragment$2 (NavigationDrawerFragment, Activity, DrawerLayout, int, int, int): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (11/11)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+          </class>
+          <class name="NavigationDrawerFragment">
+            <coverage type="class, %" value="100% (1/1)"/>
+            <coverage type="method, %" value="89%  (17/19)"/>
+            <coverage type="block, %" value="83%  (314/379)"/>
+            <coverage type="line, %" value="80%  (67.6/84)"/>
+
+            <method name="access$102 (NavigationDrawerFragment, boolean): boolean">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/5)"/>
+              <coverage type="line, %" value="0%   (0/1)"/>
+            </method>
+            <method name="onConfigurationChanged (Configuration): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/8)"/>
+              <coverage type="line, %" value="0%   (0/3)"/>
+            </method>
+            <method name="onOptionsItemSelected (MenuItem): boolean">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="19%  (7/37)"/>
+              <coverage type="line, %" value="20%  (2/10)"/>
+            </method>
+            <method name="onAttach (Activity): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="60%  (9/15)"/>
+              <coverage type="line, %" value="67%  (4/6)"/>
+            </method>
+            <method name="setUp (int, DrawerLayout): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="88%  (57/65)"/>
+              <coverage type="line, %" value="92%  (11.9/13)"/>
+            </method>
+            <method name="onCreate (Bundle): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="93%  (100/108)"/>
+              <coverage type="line, %" value="87%  (13/15)"/>
+            </method>
+            <method name="NavigationDrawerFragment (): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (6/6)"/>
+              <coverage type="line, %" value="100% (3/3)"/>
+            </method>
+            <method name="access$000 (NavigationDrawerFragment, int): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (4/4)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+            <method name="access$100 (NavigationDrawerFragment): boolean">
               <coverage type="method, %" value="100% (1/1)"/>
               <coverage type="block, %" value="100% (3/3)"/>
               <coverage type="line, %" value="100% (1/1)"/>
             </method>
-            <method name="onCreate (Bundle): void">
+            <method name="access$200 (NavigationDrawerFragment): ActionBarDrawerToggle">
               <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (30/30)"/>
-              <coverage type="line, %" value="100% (7/7)"/>
+              <coverage type="block, %" value="100% (3/3)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
             </method>
-            <method name="onCreateOptionsMenu (Menu): boolean">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (17/17)"/>
-              <coverage type="line, %" value="100% (5/5)"/>
-            </method>
-            <method name="onNavigationDrawerItemSelected (int): void">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (39/39)"/>
-              <coverage type="line, %" value="100% (14/14)"/>
-            </method>
-            <method name="onOptionsItemSelected (MenuItem): boolean">
+            <method name="getActionBar (): ActionBar">
               <coverage type="method, %" value="100% (1/1)"/>
               <coverage type="block, %" value="100% (4/4)"/>
               <coverage type="line, %" value="100% (1/1)"/>
             </method>
-            <method name="restoreActionBar (): void">
+            <method name="isDrawerOpen (): boolean">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (13/13)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+            <method name="onActivityCreated (Bundle): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (7/7)"/>
+              <coverage type="line, %" value="100% (3/3)"/>
+            </method>
+            <method name="onCreateOptionsMenu (Menu, MenuInflater): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (17/17)"/>
+              <coverage type="line, %" value="100% (5/5)"/>
+            </method>
+            <method name="onCreateView (LayoutInflater, ViewGroup, Bundle): View">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (29/29)"/>
+              <coverage type="line, %" value="100% (4/4)"/>
+            </method>
+            <method name="onDetach (): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (6/6)"/>
+              <coverage type="line, %" value="100% (3/3)"/>
+            </method>
+            <method name="onSaveInstanceState (Bundle): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (9/9)"/>
+              <coverage type="line, %" value="100% (3/3)"/>
+            </method>
+            <method name="selectItem (int): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (27/27)"/>
+              <coverage type="line, %" value="100% (8/8)"/>
+            </method>
+            <method name="showGlobalContextActionBar (): void">
               <coverage type="method, %" value="100% (1/1)"/>
               <coverage type="block, %" value="100% (13/13)"/>
               <coverage type="line, %" value="100% (5/5)"/>
+            </method>
+          </class>
+          <class name="NavigationDrawerFragment$1">
+            <coverage type="class, %" value="100% (1/1)"/>
+            <coverage type="method, %" value="100% (2/2)"/>
+            <coverage type="block, %" value="100% (11/11)"/>
+            <coverage type="line, %" value="100% (3/3)"/>
+
+            <method name="NavigationDrawerFragment$1 (NavigationDrawerFragment): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (6/6)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+            <method name="onItemClick (AdapterView, View, int, long): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (5/5)"/>
+              <coverage type="line, %" value="100% (2/2)"/>
+            </method>
+          </class>
+          <class name="NavigationDrawerFragment$3">
+            <coverage type="class, %" value="100% (1/1)"/>
+            <coverage type="method, %" value="100% (2/2)"/>
+            <coverage type="block, %" value="100% (11/11)"/>
+            <coverage type="line, %" value="100% (3/3)"/>
+
+            <method name="NavigationDrawerFragment$3 (NavigationDrawerFragment): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (6/6)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+            <method name="run (): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (5/5)"/>
+              <coverage type="line, %" value="100% (2/2)"/>
+            </method>
+          </class>
+        </srcfile>
+        <srcfile name="ProfileFragment.java">
+          <coverage type="class, %" value="100% (2/2)"/>
+          <coverage type="method, %" value="100% (6/6)"/>
+          <coverage type="block, %" value="100% (59/59)"/>
+          <coverage type="line, %" value="100% (14/14)"/>
+
+          <class name="ProfileFragment">
+            <coverage type="class, %" value="100% (1/1)"/>
+            <coverage type="method, %" value="100% (4/4)"/>
+            <coverage type="block, %" value="100% (39/39)"/>
+            <coverage type="line, %" value="100% (11/11)"/>
+
+            <method name="&lt;static initializer&gt;">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (3/3)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+            <method name="ProfileFragment (): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (3/3)"/>
+              <coverage type="line, %" value="100% (2/2)"/>
+            </method>
+            <method name="onCreate (Bundle): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (4/4)"/>
+              <coverage type="line, %" value="100% (2/2)"/>
+            </method>
+            <method name="onCreateView (LayoutInflater, ViewGroup, Bundle): View">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (29/29)"/>
+              <coverage type="line, %" value="100% (6/6)"/>
+            </method>
+          </class>
+          <class name="ProfileFragment$1">
+            <coverage type="class, %" value="100% (1/1)"/>
+            <coverage type="method, %" value="100% (2/2)"/>
+            <coverage type="block, %" value="100% (20/20)"/>
+            <coverage type="line, %" value="100% (4/4)"/>
+
+            <method name="ProfileFragment$1 (ProfileFragment): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (6/6)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+            <method name="onClick (View): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (14/14)"/>
+              <coverage type="line, %" value="100% (3/3)"/>
+            </method>
+          </class>
+        </srcfile>
+        <srcfile name="SettingFragment.java">
+          <coverage type="class, %" value="100% (1/1)"/>
+          <coverage type="method, %" value="100% (2/2)"/>
+          <coverage type="block, %" value="100% (11/11)"/>
+          <coverage type="line, %" value="100% (3/3)"/>
+
+          <class name="SettingFragment">
+            <coverage type="class, %" value="100% (1/1)"/>
+            <coverage type="method, %" value="100% (2/2)"/>
+            <coverage type="block, %" value="100% (11/11)"/>
+            <coverage type="line, %" value="100% (3/3)"/>
+
+            <method name="SettingFragment (): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (3/3)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+            <method name="onCreateView (LayoutInflater, ViewGroup, Bundle): View">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (8/8)"/>
+              <coverage type="line, %" value="100% (2/2)"/>
             </method>
           </class>
         </srcfile>

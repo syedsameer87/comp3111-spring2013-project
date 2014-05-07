@@ -18,6 +18,7 @@ import com.plan2gather.fragments.*;
 
 public class MainActivityTest extends ActivityInstrumentationTestCase2<MainActivity> {
 
+	
 	MainActivity mActivity;
 	NavigationDrawerFragment mNavigationDrawerFragment;
 	
@@ -64,6 +65,8 @@ public class MainActivityTest extends ActivityInstrumentationTestCase2<MainActiv
 		OpenSlidebar();
 		//Select Calendar
 		TouchUtils.drag(this, 25, 25, 100, 100, 0);
+		//
+		TouchUtils.drag(this, 155, 155, 388, 388, 0);
 		//Click on an item
 		TouchUtils.drag(this, 160, 160, 240, 240, 0);
 		//Click on previous for 6 times
@@ -81,11 +84,16 @@ public class MainActivityTest extends ActivityInstrumentationTestCase2<MainActiv
 	public void testSelectSocle() {
 		OpenSlidebar();
 		TouchUtils.drag(this, 25, 25, 150, 150, 0);
+		//
+		TouchUtils.drag(this, 155, 155, 150, 150, 0);
 	}
 	
 	public void testSelectProfile() {
 		OpenSlidebar();
 		TouchUtils.drag(this, 25, 25, 200, 200, 0);
+		TouchUtils.drag(this, 133, 133, 133, 133, 0);
+		sendKeys("1");
+		TouchUtils.drag(this, 150, 150, 200, 200, 0);
 	}
 	
 	public void testSelectSetting() {
@@ -99,28 +107,5 @@ public class MainActivityTest extends ActivityInstrumentationTestCase2<MainActiv
 	}
 	
 }
-	
-	
-	/*
-	@SmallTest
-	public void testnavigationDrawerItemSelection2() {
-		mActivity.onNavigationDrawerItemSelected(2);
-	}
-	
-	@SmallTest
-	public void testnavigationDrawerItemSelection3() {
-		mActivity.onNavigationDrawerItemSelected(3);
-	}
-	
-	public void testCloseSlidebar(){
-		TouchUtils.drag(this, 300, 0, 200, 200, 0);
-	}*/
-	
-	
-	
-
-	
-
-	
 	
 	
