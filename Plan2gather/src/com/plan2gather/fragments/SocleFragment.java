@@ -13,15 +13,17 @@ import com.plan2gather.component.UserListAdapter;
 
 import android.app.Fragment;
 import android.os.Bundle;
+import android.os.Environment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 public class SocleFragment extends Fragment {
 
-	public ArrayList<UserItem> userList;
+	public static ArrayList<UserItem> userList;
 
 	public SocleFragment() {
 	}
@@ -31,13 +33,6 @@ public class SocleFragment extends Fragment {
 		super.onCreate(savedInstanceState);
 		userList = new ArrayList<UserItem>();
 		readUserList(userList);
-		try {
-			FileWriter out = new FileWriter("/user.txt", true);
-			out.write("98329337,SamSam");
-			out.close();
-		} catch (IOException e) {
-			Log.d("Sam", "Error write file");
-		}
 	}
 
 	@Override
@@ -46,6 +41,13 @@ public class SocleFragment extends Fragment {
 
 		ListView rootView = (ListView) inflater.inflate(
 				R.layout.fragment_socle, container, false);
+		rootView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+			@Override
+			public void onItemClick(AdapterView<?> parent, View view,
+					int position, long id) {
+			}
+		});
+
 		rootView.setAdapter(new UserListAdapter(getActivity(), userList));
 		return rootView;
 	}
@@ -57,7 +59,8 @@ public class SocleFragment extends Fragment {
 		String sName;
 		userList.clear();
 		try {
-			File file = new File("/user.txt");
+			File sdcard = Environment.getExternalStorageDirectory();
+			File file = new File(sdcard, "user.txt");
 			BufferedReader in = new BufferedReader(new FileReader(file));
 			while (in.readLine() != null) {
 				temp = in.readLine();
@@ -69,12 +72,18 @@ public class SocleFragment extends Fragment {
 		} catch (IOException e) {
 			Log.d("Sam", "Error read file");
 		}
+
+		userList.add(new UserItem("98329337", "SamSam"));
+		userList.add(new UserItem("68986426", "Rainbow"));
+		userList.add(new UserItem("51774170", "SiuHei"));
+		userList.add(new UserItem("64474354", "Ant"));
 	}
 
 	public void updateUserList(UserItem item) {
 		String outText = item.getID() + "," + item.getName();
 		try {
-			FileWriter out = new FileWriter("/user.txt", true);
+			File sdcard = Environment.getExternalStorageDirectory();
+			FileWriter out = new FileWriter("user.txt", true);
 			out.write(outText);
 			out.close();
 		} catch (IOException e) {
