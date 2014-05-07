@@ -1,22 +1,22 @@
-[EMMA v2.0.5312 report, generated Wed May 07 20:02:12 CST 2014]
+[EMMA v2.0.5312 report, generated Thu May 08 06:19:16 CST 2014]
 -------------------------------------------------------------------------------
 OVERALL COVERAGE SUMMARY:
 
 [class, %]	[method, %]	[block, %]	[line, %]	[name]
-100% (22/22)	82%  (89/109)	78%  (1780/2281)!	79%  (388.1/489)!	all classes
+87%  (26/30)!	68%  (100/147)!	66%  (1921/2889)!	64%  (421.7/656)!	all classes
 
 OVERALL STATS SUMMARY:
 
 total packages:	3
-total classes:	22
-total methods:	109
-total executable files:	13
-total executable lines:	489
+total classes:	30
+total methods:	147
+total executable files:	19
+total executable lines:	656
 
 COVERAGE BREAKDOWN BY PACKAGE:
 
 [class, %]	[method, %]	[block, %]	[line, %]	[name]
-100% (13/13)	89%  (47/53)	75%  (848/1127)!	76%  (172.9/227)!	com.plan2gather.fragments
-100% (6/6)	67%  (29/43)!	76%  (705/927)!	76%  (152.2/199)!	com.plan2gather.component
-100% (3/3)	100% (13/13)	100% (227/227)	100% (63/63)	com.plan2gather
+50%  (3/6)!	48%  (13/27)!	50%  (227/452)!	52%  (63/122)!	com.plan2gather
+89%  (8/9)!	56%  (34/61)!	61%  (751/1224)!	59%  (166.8/282)!	com.plan2gather.component
+100% (15/15)	90%  (53/59)	78%  (943/1213)!	76%  (191.9/252)!	com.plan2gather.fragments
 -------------------------------------------------------------------------------

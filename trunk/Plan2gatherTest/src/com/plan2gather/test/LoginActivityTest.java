@@ -63,7 +63,7 @@ public class LoginActivityTest extends
 		//assertEquals(layoutParams.width, WindowManager.LayoutParams.MATCH_PARENT);
 		//assertEquals(layoutParams.height, WindowManager.LayoutParams.WRAP_CONTENT);
 	 } 
-
+	
 
 	@SmallTest
 	public void testattemptLogin1() { // check if input is null		
