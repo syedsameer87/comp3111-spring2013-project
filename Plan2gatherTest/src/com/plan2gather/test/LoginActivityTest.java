@@ -43,7 +43,7 @@ public class LoginActivityTest extends
 		mActivity.finish();
 		super.tearDown(); 
 	 } 
-	
+
 	@SmallTest
 	public void testView() { // checks if the activity is created 
 		 assertNotNull(getActivity()); 
