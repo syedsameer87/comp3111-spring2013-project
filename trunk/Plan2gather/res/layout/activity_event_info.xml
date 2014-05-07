@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:id="@+id/eNameRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/eName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/eName"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/eNameD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/hr1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#3F3F3F" >
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/eStartRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/eStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/eStart"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/eStartD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/hr2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#3F3F3F" >
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/eEndRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/eEnd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/eEnd"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/eEndD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/hr3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#3F3F3F" >
+        </TableRow>
+
+        
+        <TableRow
+            android:id="@+id/ePlaceRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/ePlace"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ePlace"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/ePlaceD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/hr6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#3F3F3F" >
+        </TableRow>
+        <TableRow
+            android:id="@+id/eDescRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/eDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/eDesc"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/eDescD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/hr4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#3F3F3F" >
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/eRepeatRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/eRepeat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/eRepeat"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/eRepeatD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/hr5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#3F3F3F" >
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/ePartiRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/eParti"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/eParti"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/ePartiD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
