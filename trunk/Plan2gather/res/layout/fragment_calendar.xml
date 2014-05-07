@@ -54,24 +54,16 @@
         android:id="@+id/gridview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:listSelector="@android:color/transparent"
+                android:listSelector="@android:color/transparent"
         android:numColumns="7"
-        android:stretchMode="columnWidth" />
-
-    <LinearLayout
-        android:id="@+id/eventInfo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical" >
-    </LinearLayout>
+        android:stretchMode="columnWidth" >
+    </GridView>
 
     <ListView
         android:id="@+id/eventDetail"
         android:layout_width="match_parent"
-        android:layout_height="30dp"
+        android:layout_height="wrap_content"
         android:choiceMode="singleChoice"
         android:divider="@color/menu_divider"
         android:dividerHeight="2dp" />
-
 </LinearLayout>

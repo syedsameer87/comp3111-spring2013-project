@@ -5,19 +5,21 @@ import java.util.ArrayList;
 import com.plan2gather.R;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.BaseAdapter;
+import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-public class EventAdapter extends BaseAdapter {
+public class EventAdapter extends ArrayAdapter<EventItem> {
 	private Context mContext;
 	private ArrayList<EventItem> eventList;
 
-	public EventAdapter(Context context, ArrayList<EventItem> eventItem) {
+	public EventAdapter(Context context, ArrayList<EventItem> eventList) {
+		super(context, 0);
 		this.mContext = context;
-		this.eventList = eventItem;
+		this.eventList = eventList;
 	}
 
 	@Override
@@ -26,7 +28,7 @@ public class EventAdapter extends BaseAdapter {
 	}
 
 	@Override
-	public Object getItem(int position) {
+	public EventItem getItem(int position) {
 		return eventList.get(position);
 	}
 
@@ -42,7 +44,7 @@ public class EventAdapter extends BaseAdapter {
 					.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 			convertView = vi.inflate(R.layout.event_item, null);
 		}
-		
+
 		TextView txtName = (TextView) convertView.findViewById(R.id.eventName);
 		TextView txtStart = (TextView) convertView.findViewById(R.id.startTime);
 		TextView txtEnd = (TextView) convertView.findViewById(R.id.endTime);
@@ -50,7 +52,7 @@ public class EventAdapter extends BaseAdapter {
 		txtName.setText(eventList.get(position).getTitle());
 		txtStart.setText(eventList.get(position).getStartTime());
 		txtEnd.setText(eventList.get(position).getEndTime());
-
+		
 		return convertView;
 	}
 }

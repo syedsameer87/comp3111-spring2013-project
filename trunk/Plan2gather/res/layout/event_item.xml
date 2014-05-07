@@ -14,21 +14,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/eventName"
-        android:textSize="12sp" />
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/dash"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/eventName"
         android:layout_toRightOf="@id/startTime"
         android:text="@string/dash"
-        android:textSize="12sp" />
+        android:textSize="16sp" />
     
     <TextView
         android:id="@+id/endTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/eventName"
         android:layout_toRightOf="@id/dash"
-        android:textSize="12sp" />
+        android:textSize="16sp" />
 
 </RelativeLayout>
