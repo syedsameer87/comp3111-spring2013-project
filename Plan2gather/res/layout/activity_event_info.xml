@@ -37,7 +37,7 @@
         <TableRow
             android:id="@+id/hr1"
             android:layout_width="match_parent"
-            android:layout_height="1dp"
+            android:layout_height="2dp"
             android:background="#3F3F3F" >
         </TableRow>
 
@@ -70,7 +70,7 @@
         <TableRow
             android:id="@+id/hr2"
             android:layout_width="match_parent"
-            android:layout_height="1dp"
+            android:layout_height="2dp"
             android:background="#3F3F3F" >
         </TableRow>
 
@@ -103,7 +103,7 @@
         <TableRow
             android:id="@+id/hr3"
             android:layout_width="match_parent"
-            android:layout_height="1dp"
+            android:layout_height="2dp"
             android:background="#3F3F3F" >
         </TableRow>
 
@@ -137,7 +137,7 @@
         <TableRow
             android:id="@+id/hr6"
             android:layout_width="match_parent"
-            android:layout_height="1dp"
+            android:layout_height="2dp"
             android:background="#3F3F3F" >
         </TableRow>
         <TableRow
@@ -169,10 +169,10 @@
         <TableRow
             android:id="@+id/hr4"
             android:layout_width="match_parent"
-            android:layout_height="1dp"
+            android:layout_height="2dp"
             android:background="#3F3F3F" >
         </TableRow>
-
+<!-- 
         <TableRow
             android:id="@+id/eRepeatRow"
             android:layout_width="match_parent"
@@ -198,11 +198,11 @@
                     android:textSize="18sp" />
             </LinearLayout>
         </TableRow>
-
+ -->
         <TableRow
             android:id="@+id/hr5"
             android:layout_width="match_parent"
-            android:layout_height="1dp"
+            android:layout_height="2dp"
             android:background="#3F3F3F" >
         </TableRow>
 
@@ -232,5 +232,4 @@
             </LinearLayout>
         </TableRow>
     </TableLayout>
-
 </LinearLayout>
