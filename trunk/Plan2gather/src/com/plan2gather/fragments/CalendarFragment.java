@@ -8,12 +8,14 @@ import java.util.GregorianCalendar;
 import com.plan2gather.component.CalendarAdapter;
 import com.plan2gather.component.EventAdapter;
 import com.plan2gather.component.EventItem;
+import com.plan2gather.EventInfo;
 import com.plan2gather.R;
 import com.plan2gather.component.Utility;
 
 import android.os.Bundle;
 import android.os.Handler;
 import android.app.Fragment;
+import android.content.Intent;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -55,11 +57,11 @@ public class CalendarFragment extends Fragment {
 		itemMonth = (GregorianCalendar) month.clone();
 		items = new ArrayList<String>();
 		eventList = new ArrayList<EventItem>();
-		
+
 		adapter = new CalendarAdapter(getActivity(), month);
 		GridView gridview = (GridView) view.findViewById(R.id.gridview);
 		gridview.setAdapter(adapter);
-		
+
 		handler = new Handler();
 		handler.post(calendarUpdater);
 
@@ -99,8 +101,7 @@ public class CalendarFragment extends Fragment {
 					int position, long id) {
 
 				((CalendarAdapter) parent.getAdapter()).setSelected(v);
-				selectedGridDate = CalendarAdapter.dayString
-						.get(position);
+				selectedGridDate = CalendarAdapter.dayString.get(position);
 				String[] separatedTime = selectedGridDate.split("-");
 				String gridvalueString = separatedTime[2].replaceFirst("^0*",
 						"");// taking last part of date. ie; 2 from 2012-12-02.
@@ -119,6 +120,19 @@ public class CalendarFragment extends Fragment {
 			}
 		});
 
+		listView.setOnItemClickListener(new OnItemClickListener() {
+			public void onItemClick(AdapterView<?> parent, View v,
+					int position, long id) {
+				EventItem e = eventList.get(position);
+				if (e.getTitle().compareTo("No Event") != 0) {
+					Intent intent = new Intent(getActivity(), EventInfo.class);
+					String eventName = e.getTitle();
+					intent.putExtra("eName", eventName);
+					startActivity(intent);
+				}
+			}
+		});
+
 		return view;
 	}
 
@@ -133,21 +147,10 @@ public class CalendarFragment extends Fragment {
 				String eEndTime = Utility.getTime(Long
 						.parseLong(Utility.endDates.get(i)));
 				eventList.add(new EventItem(eName, eStartTime, eEndTime));
-
-				Log.d("==Sam==", "eName: " + eName);
-				Log.d("==Sam==", "eStartTime: " + eStartTime);
-				Log.d("==Sam==", "eEndTime: " + eEndTime);
 			}
 		}
 		if (eventList.isEmpty())
 			eventList.add(new EventItem("No Event", null, null));
-		/*
-		 * for(int i = 0;i < eventList.size();i++) { EventItem eventItem =
-		 * eventList.get(i); Log.d("====Sam eItem====", "eName: " +
-		 * eventItem.getTitle()); Log.d("====Sam eItem====", "eStartTime: " +
-		 * eventItem.getStartTime()); Log.d("====Sam eItem====", "eEndTime: " +
-		 * eventItem.getEndTime()); }
-		 */
 		eAdapter = new EventAdapter(getActivity(), eventList);
 		listView.setAdapter(eAdapter);
 	}
