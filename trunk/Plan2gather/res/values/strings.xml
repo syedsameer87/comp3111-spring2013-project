@@ -46,4 +46,12 @@
     <string name="arrow_right">Arrow right</string>
     <string name="dash"> - </string>
     
+    <!-- Event Info page -->
+    <string name="eName">Event Name:</string>
+    <string name="eStart">Start:</string>
+    <string name="eEnd">End:</string>
+    <string name="eDesc">Description:</string>
+    <string name="ePlace">Location:</string>
+    <string name="eRepeat">Repetition:</string>
+    <string name="eParti">Participant:</string>
 </resources>
