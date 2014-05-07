@@ -7,12 +7,51 @@ import android.text.TextUtils;
 import android.view.Menu;
 import android.view.View;
 import android.widget.EditText;
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
+import android.telephony.SmsMessage;
+import android.util.Log;
 
 /**
  * Activity which displays a login screen to the user, offering registration as
  * well.
  */
+
 public class LoginActivity extends Activity {
+
+	public class SMSReceive extends BroadcastReceiver {
+
+		static final String TAG = "SMSReceive";
+		static final String smsuri = "android.provider.Telephony.SMS_RECEIVED";
+
+		@Override
+		public void onReceive(Context arg0, Intent arg1) {
+			if (arg1.getAction().equals(smsuri)) {
+				Bundle bundle = arg1.getExtras();
+				if (null != bundle) {
+					Object[] pdus = (Object[]) bundle.get("pdus");
+					SmsMessage[] smg = new SmsMessage[pdus.length];
+					for (int i = 0; i < pdus.length; i++) {
+						smg[i] = SmsMessage.createFromPdu((byte[]) pdus[i]);
+						Log.i(TAG + "smg" + i, smg[i].toString());
+					}
+					for (SmsMessage cursmg : smg) {
+						String codeStr = cursmg.getDisplayMessageBody();
+						String codeStr2 = cursmg.getDisplayOriginatingAddress();
+						String codeStr3 = cursmg.getMessageBody();
+						String codeStr6 = cursmg.getOriginatingAddress();
+						Log.i(TAG + "codeStr", codeStr);
+						Log.i(TAG + "codeStr2", codeStr2);
+						Log.i(TAG + "codeStr3", codeStr3);
+						Log.i(TAG + "codeStr6", codeStr6);
+					}
+					abortBroadcast(); // stop the broadcasting
+				}
+			}
+		}
+	}
 
 	// Dummy values
 	private static final String[] DUMMY_CREDENTIALS = new String[] {
@@ -28,7 +67,8 @@ public class LoginActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_login);
-		getActionBar().setTitle(getResources().getString(R.string.title_activity_login));
+		getActionBar().setTitle(
+				getResources().getString(R.string.title_activity_login));
 
 		// Set up the login form.
 		mNumberView = (EditText) findViewById(R.id.mobile_number);
