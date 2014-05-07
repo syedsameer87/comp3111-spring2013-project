@@ -1,8 +1,13 @@
 C:\Users\whlau\workspace\Plan2gather\bin\classes.dex : \
 C:\Users\whlau\workspace\Plan2gather\bin\classes\com\plan2gather\BuildConfig.class \
 C:\Users\whlau\workspace\Plan2gather\bin\classes\com\plan2gather\component\CalendarAdapter.class \
+C:\Users\whlau\workspace\Plan2gather\bin\classes\com\plan2gather\component\EventAdapter.class \
+C:\Users\whlau\workspace\Plan2gather\bin\classes\com\plan2gather\component\EventItem.class \
 C:\Users\whlau\workspace\Plan2gather\bin\classes\com\plan2gather\component\NavMenuAdapter.class \
 C:\Users\whlau\workspace\Plan2gather\bin\classes\com\plan2gather\component\NavMenuItems.class \
+C:\Users\whlau\workspace\Plan2gather\bin\classes\com\plan2gather\component\UserItem.class \
+C:\Users\whlau\workspace\Plan2gather\bin\classes\com\plan2gather\component\UserListAdapter.class \
+C:\Users\whlau\workspace\Plan2gather\bin\classes\com\plan2gather\component\Utility.class \
 C:\Users\whlau\workspace\Plan2gather\bin\classes\com\plan2gather\fragments\CalendarFragment$1.class \
 C:\Users\whlau\workspace\Plan2gather\bin\classes\com\plan2gather\fragments\CalendarFragment$2.class \
 C:\Users\whlau\workspace\Plan2gather\bin\classes\com\plan2gather\fragments\CalendarFragment$3.class \
@@ -16,6 +21,7 @@ C:\Users\whlau\workspace\Plan2gather\bin\classes\com\plan2gather\fragments\Navig
 C:\Users\whlau\workspace\Plan2gather\bin\classes\com\plan2gather\fragments\ProfileFragment$1.class \
 C:\Users\whlau\workspace\Plan2gather\bin\classes\com\plan2gather\fragments\ProfileFragment.class \
 C:\Users\whlau\workspace\Plan2gather\bin\classes\com\plan2gather\fragments\SettingFragment.class \
+C:\Users\whlau\workspace\Plan2gather\bin\classes\com\plan2gather\fragments\SocleFragment$1.class \
 C:\Users\whlau\workspace\Plan2gather\bin\classes\com\plan2gather\fragments\SocleFragment.class \
 C:\Users\whlau\workspace\Plan2gather\bin\classes\com\plan2gather\LoginActivity$1.class \
 C:\Users\whlau\workspace\Plan2gather\bin\classes\com\plan2gather\LoginActivity.class \
