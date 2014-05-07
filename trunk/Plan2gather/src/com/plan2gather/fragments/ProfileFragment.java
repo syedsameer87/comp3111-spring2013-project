@@ -17,15 +17,16 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class ProfileFragment extends Fragment {
 
-	TextView textTargetUri;
-	ImageView targetImage;
-	float scale;
+	public static String screenName;
+	EditText eText;
 	
 	public ProfileFragment() {
 	}
@@ -34,8 +35,6 @@ public class ProfileFragment extends Fragment {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		
-		scale = getActivity().getResources().getDisplayMetrics().density;
 	}
 
 	@Override
@@ -43,58 +42,20 @@ public class ProfileFragment extends Fragment {
 			Bundle savedInstanceState) {
 		View view = inflater.inflate(R.layout.fragment_profile, container,
 				false);
-
-		Button buttonLoadImage = (Button) view.findViewById(R.id.loadimage);
-		targetImage = (ImageView) view.findViewById(R.id.targetimage);
-
-		buttonLoadImage.setOnClickListener(new Button.OnClickListener() {
+		eText = (EditText) view.findViewById(R.id.screenName);
+		eText.setText(screenName);
+		Button changeSName = (Button) view.findViewById(R.id.changeSName);
+		changeSName.setOnClickListener(new Button.OnClickListener() {
 
 			@Override
 			public void onClick(View view) {
 				// TODO Auto-generated method stub
-				Intent intent = new Intent(
-						Intent.ACTION_PICK,
-						android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-				startActivityForResult(intent, 1);
+				screenName = eText.getText().toString();
+				Toast.makeText(getActivity(), "Change success!", Toast.LENGTH_SHORT).show();
 			}
 		});
 
 		return view;
-	}
-
-	@Override
-	public void onActivityResult(int requestCode, int resultCode, Intent data) {
-		// TODO Auto-generated method stub
-		super.onActivityResult(requestCode, resultCode, data);
-
-		if (requestCode == 1 && resultCode == Activity.RESULT_OK) {
-			MainActivity activity = (MainActivity) getActivity();
-			Bitmap bitmap = getBitmapFromCameraData(data, activity);
-			float dpToPx = 300 * scale + 0.5f;
-			LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(
-					-1, (int)dpToPx);
-			targetImage.setLayoutParams(layoutParams);
-			targetImage.setImageBitmap(bitmap);
-		}
-	}
-
-	/**
-	 * Use for decoding camera response data.
-	 * 
-	 * @param data
-	 * @param context
-	 * @return
-	 */
-	public static Bitmap getBitmapFromCameraData(Intent data, Context context) {
-		Uri selectedImage = data.getData();
-		String[] filePathColumn = { MediaStore.Images.Media.DATA };
-		Cursor cursor = context.getContentResolver().query(selectedImage,
-				filePathColumn, null, null, null);
-		cursor.moveToFirst();
-		int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
-		String picturePath = cursor.getString(columnIndex);
-		cursor.close();
-		return BitmapFactory.decodeFile(picturePath);
 	}
 
 }

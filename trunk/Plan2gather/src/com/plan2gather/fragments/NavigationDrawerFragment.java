@@ -309,9 +309,13 @@ public class NavigationDrawerFragment extends Fragment {
 		}
 		if (item.getItemId() == R.id.action_function) {
 			//Calender
-			if(mCurrentSelectedPosition == 0);
+			if(mCurrentSelectedPosition == 0){
+				//create event
+			}
 			//Socle
-			else if(mCurrentSelectedPosition == 1);
+			else if(mCurrentSelectedPosition == 1) {
+				
+			}
 
 			return true;
 		}
