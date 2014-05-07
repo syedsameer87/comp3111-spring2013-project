@@ -25,7 +25,7 @@ import android.widget.Toast;
 
 public class ProfileFragment extends Fragment {
 
-	public static String screenName;
+	public static String screenName = "COMP3111";
 	EditText eText;
 	
 	public ProfileFragment() {
