@@ -1,0 +1,1 @@
+A new android app for planning event, provide with a calender, notice board, voting, location sharing.
